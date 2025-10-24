@@ -2,6 +2,7 @@ import Hero from "./Hero";
 import Architecture from "./Architecture";
 import CaseStudy from "./CaseStudy";
 import CoreSolutions from "./CoreSolutions";
+import WhyChooseUs from "./WhyChooseUs";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <CoreSolutions/>
       <Architecture />
       <CaseStudy />
+      <WhyChooseUs />
     </main>
   );
 }
