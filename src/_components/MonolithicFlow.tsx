@@ -274,16 +274,16 @@ export default function MonolithicFlow() {
                         style={{ scaleY: line4Progress }}
                         className="relative w-full h-20"
                     >
-                        <svg className="absolute inset-0 w-full h-full" style={{ overflow: 'visible' }}>
+                        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" style={{ overflow: 'visible' }}>
                             <motion.path
-                                d="M 50% 0 L 30% 100"
+                                d="M 50 0 L 30 100"
                                 stroke="rgba(251, 191, 36, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
                                 style={{ pathLength: line4Progress }}
                             />
                             <motion.path
-                                d="M 50% 0 L 70% 100"
+                                d="M 50 0 L 70 100"
                                 stroke="rgba(251, 191, 36, 0.3)"
                                 strokeWidth="1"
                                 fill="none"

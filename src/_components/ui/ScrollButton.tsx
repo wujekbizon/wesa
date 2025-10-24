@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 
 export default function ScrollButton({ tag, className = '' }: { tag: string; className?: string }) {
-    console.log(tag)
     return (
         <div className={`${className} absolute bottom-30 left-1/2 -translate-x-1/2`}>
             <a href={`#${tag}`} className="block" aria-label="Scroll to explore section">

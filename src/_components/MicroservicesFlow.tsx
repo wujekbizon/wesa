@@ -194,37 +194,37 @@ export default function MicroservicesFlow() {
                         style={{ scaleY: line3Progress }}
                         className="relative w-full h-24"
                     >
-                        <svg className="absolute inset-0 w-full h-full" style={{ overflow: 'visible' }}>
+                        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" style={{ overflow: 'visible' }}>
                             <motion.path
-                                d="M 50% 0 L 10% 100"
+                                d="M 50 0 L 10 100"
                                 stroke="rgba(6, 182, 212, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
                                 style={{ pathLength: line3Progress }}
                             />
                             <motion.path
-                                d="M 50% 0 L 30% 100"
+                                d="M 50 0 L 30 100"
                                 stroke="rgba(6, 182, 212, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
                                 style={{ pathLength: line3Progress }}
                             />
                             <motion.path
-                                d="M 50% 0 L 50% 100"
+                                d="M 50 0 L 50 100"
                                 stroke="rgba(6, 182, 212, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
                                 style={{ pathLength: line3Progress }}
                             />
                             <motion.path
-                                d="M 50% 0 L 70% 100"
+                                d="M 50 0 L 70 100"
                                 stroke="rgba(6, 182, 212, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
                                 style={{ pathLength: line3Progress }}
                             />
                             <motion.path
-                                d="M 50% 0 L 90% 100"
+                                d="M 50 0 L 90 100"
                                 stroke="rgba(6, 182, 212, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
@@ -351,37 +351,37 @@ export default function MicroservicesFlow() {
                         style={{ scaleY: line4Progress }}
                         className="relative w-full h-20"
                     >
-                        <svg className="absolute inset-0 w-full h-full" style={{ overflow: 'visible' }}>
+                        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" style={{ overflow: 'visible' }}>
                             <motion.path
-                                d="M 10% 0 L 10% 100"
+                                d="M 10 0 L 10 100"
                                 stroke="rgba(239, 68, 68, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
                                 style={{ pathLength: line4Progress }}
                             />
                             <motion.path
-                                d="M 30% 0 L 30% 100"
+                                d="M 30 0 L 30 100"
                                 stroke="rgba(251, 191, 36, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
                                 style={{ pathLength: line4Progress }}
                             />
                             <motion.path
-                                d="M 50% 0 L 50% 100"
+                                d="M 50 0 L 50 100"
                                 stroke="rgba(16, 185, 129, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
                                 style={{ pathLength: line4Progress }}
                             />
                             <motion.path
-                                d="M 70% 0 L 70% 100"
+                                d="M 70 0 L 70 100"
                                 stroke="rgba(59, 130, 246, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
                                 style={{ pathLength: line4Progress }}
                             />
                             <motion.path
-                                d="M 90% 0 L 90% 100"
+                                d="M 90 0 L 90 100"
                                 stroke="rgba(236, 72, 153, 0.3)"
                                 strokeWidth="1"
                                 fill="none"
