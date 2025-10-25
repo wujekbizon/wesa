@@ -153,7 +153,7 @@ const EncryptedTestimonials = () => {
               >
                 <div className="relative w-full max-w-3xl">
                   <motion.div
-                    className="bg-gradient-to-br from-amber-400 via-amber-400 to-amber-500 border-4 border-black rounded-3xl p-12 shadow-2xl"
+                    className="bg-linear-to-br from-amber-400 via-amber-400 to-amber-500 border-4 border-black rounded-3xl p-12 shadow-2xl"
                     animate={{ 
                       boxShadow: [
                         '0 20px 50px rgba(0,0,0,0.2)',
@@ -202,7 +202,7 @@ const EncryptedTestimonials = () => {
               >
                 <div className="relative">
                   <motion.div
-                    className="bg-gradient-to-br from-amber-400 via-amber-400 to-amber-500 border-4 border-black rounded-full p-16 shadow-2xl"
+                    className="bg-linear-to-br from-amber-400 via-amber-400 to-amber-500 border-4 border-black rounded-full p-16 shadow-2xl"
                     animate={{ rotate: 360 }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
                   >
@@ -255,7 +255,7 @@ const EncryptedTestimonials = () => {
               >
                 <div className="relative">
                   <motion.div
-                    className="bg-gradient-to-br from-green-400 via-emerald-400 to-green-500 border-4 border-black rounded-full p-16 shadow-2xl"
+                    className="bg-linear-to-br from-green-400 via-emerald-400 to-green-500 border-4 border-black rounded-full p-16 shadow-2xl"
                     initial={{ scale: 0.8 }}
                     animate={{ scale: [0.8, 1.1, 1] }}
                     transition={{ duration: 0.8 }}
@@ -309,7 +309,7 @@ const EncryptedTestimonials = () => {
               >
                 <div className="relative">
                   <motion.div
-                    className="bg-gradient-to-br from-amber-400 via-amber-400 to-amber-500 border-4 border-black rounded-3xl p-8 md:p-12 shadow-2xl"
+                    className="bg-linear-to-br from-amber-400 via-amber-400 to-amber-500 border-4 border-black rounded-3xl p-8 md:p-12 shadow-2xl"
                     layoutId="testimonial-card"
                   >
                     {/* Security badge */}

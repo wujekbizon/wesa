@@ -1,26 +1,167 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@theme {
+  --background: hsl(255 100% 100%);
+  --foreground: hsl(240 10% 3.9%);
+  --breakpoint-xs: 480px;
+  --primary: hsl(240 5.9% 10%);
+  --primary-foreground: hsl(0 0% 98%);
+  --secondary: hsl(240 4.8% 95.9%);
+  --secondary-foreground: hsl(240 5.9% 10%);
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --muted: 240 10% 30%;
+  --muted-foreground: 240 3.8% 46.1%; 
+  --accent: 240 4.8% 10.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 10% 16%;
+  --ring: 240 10% 3.9%;
+  --slidein-delay: 0;
+  --radius: 0.5rem;
+  --animate-slideInDown: slideInDown 1s ease var(--slidein-delay, 0) forwards;
+  --animate-fadeInUp: fadeInUp 0.5s ease-out forwards;
+  --animate-scaleIn: scaleIn 0.5s ease-out forwards;
+  --animate-gradient: gradient 8s ease-in-out infinite alternate;
+  --animate-gradientPosition: gradientPosition 30s ease-in-out infinite;
+  --animate-gradientScale: gradientScale 60s ease-in-out infinite;
+  --animate-gradientRotate: gradientRotate 40s ease infinite;
+  --animate-radialPulse: radialPulse 60s ease-in-out infinite;
+  --animate-slideInLeft: slideInLeft 1s ease-out forwards;
+
+  @keyframes slideInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(100px);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.35);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes gradient {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0.2; }
+  }
+  
+  @keyframes gradientPosition {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  @keyframes gradientScale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  @keyframes gradientRotate {
+    0% { opacity: 0; background-image: linear-gradient(45deg, rgba(255,91,91,0.2) 0%, rgba(147,51,234,0.1) 50%, rgba(255,91,91,0.2) 100%); }
+    33% { opacity: 1; background-image: linear-gradient(60deg, rgba(59,130,246,0.1) 0%, rgba(255,91,91,0.2) 50%, rgba(147,51,234,0.1) 100%); }
+    66% { opacity: 1; background-image: linear-gradient(45deg, rgba(255,91,91,0.2) 0%, rgba(59,130,246,0.1) 50%, rgba(255,91,91,0.2) 100%); }
+    100% { opacity: 0; background-image: linear-gradient(45deg, rgba(255,91,91,0.2) 0%, rgba(147,51,234,0.1) 50%, rgba(255,91,91,0.2) 100%); }
+  }
+  
+  @keyframes radialPulse {
+    0%, 100% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(1.1); }
+  }
+  
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #fcf2f1 white;
+  }
+  .scrollbar-webkit {
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ffa5a5;
+      border-radius: 20px;
+      border: 1px solid white;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+@layer base {
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --slidein-delay: 0;
+ }
 }
+

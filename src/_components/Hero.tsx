@@ -41,17 +41,12 @@ const Hero = () => {
   }
 
   return (
-    <div ref={containerRef} className="relative h-screen">
+    <div ref={containerRef} className="relative h-screen bg-black">
       <motion.div
         style={{ y: yBackground }}
         className="absolute inset-0 -z-10"
       >
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ 
-            backgroundImage: `url(/images/hero.jpg)`,
-          }}
-        />
+       
         <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/20 to-black/60" />
         <div className="absolute inset-0 bg-linear-to-r from-black/30 via-transparent to-black/30" />
       </motion.div>

@@ -1,6 +1,6 @@
 export default function DevelopersLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main className="flex relative h-[calc(100vh-80px)] justify-center w-full">
+    <main className="relative min-h-[calc(100vh-80px)]">
       {children}
     </main>
   )
