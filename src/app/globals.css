@@ -112,7 +112,7 @@
 @layer utilities {
   .scrollbar-thin {
     scrollbar-width: thin;
-    scrollbar-color: #fcf2f1 white;
+    scrollbar-color: #000000 rgb(0, 0, 0);
   }
   .scrollbar-webkit {
     &::-webkit-scrollbar {
@@ -120,13 +120,13 @@
       height: 10px;
     }
     &::-webkit-scrollbar-track {
-      background: transparent;
-      border-radius: 10px;
+      background: #121211;
+      /* border-radius: 10px; */
     }
     &::-webkit-scrollbar-thumb {
-      background-color: #ffa5a5;
+      background-color: #ffba00;
       border-radius: 20px;
-      border: 1px solid white;
+      border: 1px solid rgb(0, 0, 0);
     }
   }
 }
