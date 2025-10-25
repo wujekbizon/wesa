@@ -20,8 +20,8 @@ export default function MicroservicesFlow() {
     const containerOpacity = useTransform(smoothProgress, [0, 0.1, 0.85, 0.95], [0, 1, 1, 0]);
     const containerScale = useTransform(smoothProgress, [0, 0.1], [0.95, 1]);
 
-    const userOpacity = useTransform(smoothProgress, [0.1, 0.15], [0, 1]);
-    const userY = useTransform(smoothProgress, [0.1, 0.15], [20, 0]);
+    const userOpacity = useTransform(smoothProgress, [0.1, 0.13], [0, 1]);
+    const userY = useTransform(smoothProgress, [0.1, 0.13], [20, 0]);
 
     const line1Progress = useTransform(smoothProgress, [0.15, 0.22], [0, 1]);
 
@@ -35,40 +35,40 @@ export default function MicroservicesFlow() {
 
     const line3Progress = useTransform(smoothProgress, [0.42, 0.49], [0, 1]);
 
-    const service1Opacity = useTransform(smoothProgress, [0.49, 0.53], [0, 1]);
-    const service1X = useTransform(smoothProgress, [0.49, 0.53], [-20, 0]);
+    const service1Opacity = useTransform(smoothProgress, [0.45, 0.47], [0, 1]);
+    const service1X = useTransform(smoothProgress, [0.45, 0.47], [-20, 0]);
 
-    const service2Opacity = useTransform(smoothProgress, [0.51, 0.55], [0, 1]);
-    const service2X = useTransform(smoothProgress, [0.51, 0.55], [-10, 0]);
+    const service2Opacity = useTransform(smoothProgress, [0.47, 0.49], [0, 1]);
+    const service2X = useTransform(smoothProgress, [0.47, 0.49], [-10, 0]);
 
-    const service3Opacity = useTransform(smoothProgress, [0.53, 0.57], [0, 1]);
+    const service3Opacity = useTransform(smoothProgress, [0.49, 0.52], [0, 1]);
 
-    const service4Opacity = useTransform(smoothProgress, [0.55, 0.59], [0, 1]);
-    const service4X = useTransform(smoothProgress, [0.55, 0.59], [10, 0]);
+    const service4Opacity = useTransform(smoothProgress, [0.52, 0.55], [0, 1]);
+    const service4X = useTransform(smoothProgress, [0.52, 0.55], [10, 0]);
 
-    const service5Opacity = useTransform(smoothProgress, [0.57, 0.61], [0, 1]);
-    const service5X = useTransform(smoothProgress, [0.57, 0.61], [20, 0]);
+    const service5Opacity = useTransform(smoothProgress, [0.57, 0.59], [0, 1]);
+    const service5X = useTransform(smoothProgress, [0.57, 0.59], [20, 0]);
 
-    const line4Progress = useTransform(smoothProgress, [0.61, 0.68], [0, 1]);
+    const line4Progress = useTransform(smoothProgress, [0.57, 0.63], [0, 1]);
 
-    const db1Opacity = useTransform(smoothProgress, [0.68, 0.71], [0, 1]);
-    const db1X = useTransform(smoothProgress, [0.68, 0.71], [-20, 0]);
+    const db1Opacity = useTransform(smoothProgress, [0.63, 0.65], [0, 1]);
+    const db1X = useTransform(smoothProgress, [0.63, 0.65], [-20, 0]);
 
-    const db2Opacity = useTransform(smoothProgress, [0.69, 0.72], [0, 1]);
-    const db2X = useTransform(smoothProgress, [0.69, 0.72], [-10, 0]);
+    const db2Opacity = useTransform(smoothProgress, [0.64, 0.66], [0, 1]);
+    const db2X = useTransform(smoothProgress, [0.64, 0.66], [-10, 0]);
 
-    const db3Opacity = useTransform(smoothProgress, [0.70, 0.73], [0, 1]);
+    const db3Opacity = useTransform(smoothProgress, [0.65, 0.68], [0, 1]);
 
-    const db4Opacity = useTransform(smoothProgress, [0.71, 0.74], [0, 1]);
-    const db4X = useTransform(smoothProgress, [0.71, 0.74], [10, 0]);
+    const db4Opacity = useTransform(smoothProgress, [0.66, 0.69], [0, 1]);
+    const db4X = useTransform(smoothProgress, [0.66, 0.69], [10, 0]);
 
-    const db5Opacity = useTransform(smoothProgress, [0.72, 0.75], [0, 1]);
-    const db5X = useTransform(smoothProgress, [0.72, 0.75], [20, 0]);
+    const db5Opacity = useTransform(smoothProgress, [0.67, 0.7], [0, 1]);
+    const db5X = useTransform(smoothProgress, [0.67, 0.7], [20, 0]);
 
-    const line5Progress = useTransform(smoothProgress, [0.75, 0.82], [0, 1]);
+    const line5Progress = useTransform(smoothProgress, [0.7, 0.72], [0, 1]);
 
-    const infraOpacity = useTransform(smoothProgress, [0.78, 0.85], [0, 1]);
-    const infraY = useTransform(smoothProgress, [0.78, 0.85], [20, 0]);
+    const infraOpacity = useTransform(smoothProgress, [0.71, 0.76], [0, 1]);
+    const infraY = useTransform(smoothProgress, [0.71, 0.85], [20, 0]);
 
     return (
         <motion.div
@@ -205,51 +205,74 @@ export default function MicroservicesFlow() {
                         className="relative w-full flex justify-center mb-6"
                         style={{ height: '64px' }}
                     >
-                        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 500 64" preserveAspectRatio="xMidYMid meet">
+                        <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 1000 64" preserveAspectRatio="xMidYMid meet" style={{ zIndex: 10 }}>
+                            <defs>
+                                <linearGradient id="gradient-red" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stopColor="rgb(34, 211, 238)" />
+                                    <stop offset="100%" stopColor="rgb(239, 68, 68)" />
+                                </linearGradient>
+                                <linearGradient id="gradient-amber" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stopColor="rgb(34, 211, 238)" />
+                                    <stop offset="100%" stopColor="rgb(251, 191, 36)" />
+                                </linearGradient>
+                                <linearGradient id="gradient-emerald" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stopColor="rgb(34, 211, 238)" />
+                                    <stop offset="100%" stopColor="rgb(16, 185, 129)" />
+                                </linearGradient>
+                                <linearGradient id="gradient-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stopColor="rgb(34, 211, 238)" />
+                                    <stop offset="100%" stopColor="rgb(59, 130, 246)" />
+                                </linearGradient>
+                                <linearGradient id="gradient-pink" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stopColor="rgb(34, 211, 238)" />
+                                    <stop offset="100%" stopColor="rgb(236, 72, 153)" />
+                                </linearGradient>
+                            </defs>
                             <motion.path
-                                d="M 250 0 L 50 64"
-                                stroke="rgb(34, 211, 238)"
+                                d="M 500 0 L 100 64"
+                                stroke="url(#gradient-red)"
                                 strokeWidth="2"
                                 fill="none"
                                 strokeDasharray="1000"
                                 strokeDashoffset={useTransform(line3Progress, [0, 1], [1000, 0])}
                             />
                             <motion.path
-                                d="M 250 0 L 150 64"
-                                stroke="rgb(34, 211, 238)"
+                                d="M 500 0 L 300 64"
+                                stroke="url(#gradient-amber)"
                                 strokeWidth="2"
                                 fill="none"
                                 strokeDasharray="1000"
                                 strokeDashoffset={useTransform(line3Progress, [0, 1], [1000, 0])}
                             />
                             <motion.path
-                                d="M 250 0 L 250 64"
-                                stroke="rgb(34, 211, 238)"
+                                d="M 500 0 L 700 64"
+                                stroke="url(#gradient-blue)"
                                 strokeWidth="2"
                                 fill="none"
                                 strokeDasharray="1000"
                                 strokeDashoffset={useTransform(line3Progress, [0, 1], [1000, 0])}
                             />
                             <motion.path
-                                d="M 250 0 L 350 64"
-                                stroke="rgb(34, 211, 238)"
+                                d="M 500 0 L 900 64"
+                                stroke="url(#gradient-pink)"
                                 strokeWidth="2"
                                 fill="none"
                                 strokeDasharray="1000"
                                 strokeDashoffset={useTransform(line3Progress, [0, 1], [1000, 0])}
                             />
+                            {/* Center line with gradient */}
                             <motion.path
-                                d="M 250 0 L 450 64"
-                                stroke="rgb(34, 211, 238)"
+                                d="M 500 0 L 500 64"
+                                stroke="rgb(16, 185, 129)"
                                 strokeWidth="2"
                                 fill="none"
+                                strokeLinecap="round"
                                 strokeDasharray="1000"
                                 strokeDashoffset={useTransform(line3Progress, [0, 1], [1000, 0])}
+                                style={{ opacity: 1 }}
                             />
                         </svg>
                     </motion.div>
-
-                    {/* Microservices Layer */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 w-full max-w-5xl mb-6">
                         <motion.div
                             style={{ opacity: service1Opacity, x: service1X }}
