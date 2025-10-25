@@ -309,10 +309,10 @@ export default function WhyChooseUs() {
 
         {/* HQ Marker */}
         <motion.div
-          className="absolute w-5 h-5 md:w-6 md:h-6 bg-green-400 rounded-full shadow-[0_0_20px_5px_rgba(0,255,0,0.8)] z-20 flex items-center justify-center"
+          className="absolute w-5 h-5 md:w-6 md:h-6 bg-amber-400 rounded-full shadow-[0_0_20px_5px_rgba(251,191,36,0.8)] z-20 flex items-center justify-center"
           style={{
-            left: getPosition(hq.x, hq.y).left - 10,
-            top: getPosition(hq.x, hq.y).top - 10
+            left: getPosition(hq.x, hq.y).left - (dimensions.width < 768 ? 10 : 12),
+            top: getPosition(hq.x, hq.y).top - (dimensions.width < 768 ? 10 : 12)
           }}
           animate={{
             scale: [1, 1.3, 1],
@@ -323,15 +323,13 @@ export default function WhyChooseUs() {
             duration: 2,
           }}
         >
-          <div className="w-2 h-2 md:w-3 md:h-3 bg-white rounded-full" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 md:w-3 md:h-3 bg-black rounded-full" />
         </motion.div>
-
-        {/* HQ Label */}
         <motion.div
-          className="absolute px-2 md:px-3 py-1 md:py-1.5 rounded-lg bg-green-500/90 backdrop-blur-sm text-white text-[10px] md:text-xs font-bold shadow-lg border border-green-300/50 z-20 whitespace-nowrap -translate-x-1/2"
+          className="absolute px-2 md:px-3 py-1 md:py-1.5 rounded-lg bg-amber-400 backdrop-blur-xl text-black text-[8px] sm:text-[10px] md:text-xs font-semibold shadow-lg border border-black/50 z-20 whitespace-nowrap -translate-x-1/2"
           style={{
-            left: getPosition(hq.x, hq.y).left + 90,
-            top: getPosition(hq.x, hq.y).top - 40,
+            left: getPosition(hq.x, hq.y).left + 40,
+            top: getPosition(hq.x, hq.y).top - 45,
           }}
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
