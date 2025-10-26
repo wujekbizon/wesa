@@ -167,7 +167,7 @@ export const CppVisual = () => {
 
   return (
     <div className="w-full">
-      <div className="relative min-h-[440px] md:min-h-[520px] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl border-2 border-gray-700 overflow-hidden p-4 md:p-8">
+      <div className="relative min-h-[440px] md:min-h-[520px] bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 rounded-xl border-2 border-gray-700 overflow-hidden p-4 md:p-8">
         {/* Background grid */}
         <div className="absolute inset-0 opacity-5">
           <div
@@ -293,7 +293,7 @@ export const CppVisual = () => {
                         </div>
                         <div className="relative h-4 bg-gray-700 rounded-full overflow-hidden">
                           <motion.div
-                            className="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-500 to-cyan-400"
+                            className="absolute inset-y-0 left-0 bg-linear-to-r from-blue-500 to-cyan-400"
                             animate={{ width: `${compilationProgress}%` }}
                             transition={{ duration: 0.3 }}
                           />
@@ -350,7 +350,7 @@ export const CppVisual = () => {
                         </div>
                         <div className="relative h-4 bg-gray-700 rounded-full overflow-hidden">
                           <motion.div
-                            className="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-600 to-blue-400"
+                            className="absolute inset-y-0 left-0 bg-linear-to-r from-blue-600 to-blue-400"
                             animate={{ width: `${dockerProgress}%` }}
                             transition={{ duration: 0.3 }}
                           />
@@ -440,7 +440,7 @@ export const CppVisual = () => {
                               key={p.id}
                               initial={{ opacity: 1 }}
                               exit={{ opacity: 0 }}
-                              className="absolute rounded-full bg-gradient-to-br from-pink-400 to-purple-500"
+                              className="absolute rounded-full bg-linear-to-br from-pink-400 to-purple-500"
                               style={{
                                 left: `${p.x}%`,
                                 top: `${p.y}%`,
@@ -457,7 +457,7 @@ export const CppVisual = () => {
                     {gameType === "physics" && (
                       <div className="absolute inset-0">
                         <motion.div
-                          className="absolute w-12 h-12 rounded-full bg-gradient-to-br from-pink-400 to-purple-500 shadow-lg"
+                          className="absolute w-12 h-12 rounded-full bg-linear-to-br from-pink-400 to-purple-500 shadow-lg"
                           style={{
                             left: "calc(50% - 24px)",
                             top: `${physicsY}%`,
@@ -493,7 +493,7 @@ export const CppVisual = () => {
                           ].map((face, i) => (
                             <div
                               key={i}
-                              className={`absolute w-20 h-20 bg-gradient-to-br ${face.bg} border-2 border-white/20`}
+                              className={`absolute w-20 h-20 bg-linear-to-br ${face.bg} border-2 border-white/20`}
                               style={{
                                 transform: face.transform,
                                 backfaceVisibility: "visible",
