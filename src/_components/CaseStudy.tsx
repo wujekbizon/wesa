@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, Lightbulb, TrendingUp } from 'lucide-react';
 
 export default function CaseStudy() {
     return (
-        <section className="relative py-24 md:py-32 bg-white border-t border-gray-200">
+        <section id='case-study' className="relative py-24 md:py-32 bg-white border-t border-gray-200">
             <div className="absolute inset-0 opacity-[0.03]">
                 <div
                     className="h-full w-full"

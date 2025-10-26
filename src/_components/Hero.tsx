@@ -250,7 +250,7 @@ const Hero = () => {
             />
           </motion.div>
         </motion.div>
-        <ScrollButton tag="core-solutions" />
+        <ScrollButton tag="core" />
       </motion.section>
     </div>
   )

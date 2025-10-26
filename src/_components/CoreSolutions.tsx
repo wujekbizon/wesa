@@ -136,7 +136,7 @@ export default function CoreSolutions() {
 
   return (
     <section
-      id='core-solutions'
+      id='core'
       ref={containerRef}
       className="relative bg-black text-white py-24 md:py-32 overflow-hidden"
     >

@@ -12,6 +12,7 @@ export default function Architecture() {
 
   return (
     <section
+      id='architecture'
       ref={containerRef}
       className="relative bg-black text-white overflow-hidden"
     >

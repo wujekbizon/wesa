@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Open_Sans, Poppins } from 'next/font/google'
+import { Open_Sans, Poppins } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/src/_components/Navbar'
 import Footer from '@/src/_components/Footer';
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} scrollbar-webkit`}>
+      <body className={`${poppins.className} bg-black scrollbar-webkit`}>
         <Navbar />
         <div className="pt-20">{children}</div>
         <Footer />
