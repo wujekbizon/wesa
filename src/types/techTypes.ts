@@ -11,3 +11,9 @@ interface TechCategory {
     category: string;
     items: TechItem[];
 }
+
+interface Chunk {
+    id: number;
+    position: "source" | "transit" | "buffer" | "consumed";
+  }
+  

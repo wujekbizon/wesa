@@ -22,3 +22,26 @@ export default async function Products() {
   
   return <ProductList items={products} />
 }`
+
+export const codeExampleTypescript = `function getUserData(id) {
+  const user = fetchUser(id)
+  return user.name.toUpperCase()
+}`
+
+export const outputLinesNode = [
+  "<!DOCTYPE html>",
+  "<html>",
+  "  <head>",
+  "    <title>Streaming Content</title>",
+  '    <meta charset="utf-8">',
+  "  </head>",
+  "  <body>",
+  "    <header>",
+  "      <h1>Real-time Stream</h1>",
+  "    </header>",
+  "    <main>",
+  "      <p>Content delivered as it arrives</p>",
+  "    </main>",
+  "  </body>",
+  "</html>",
+];

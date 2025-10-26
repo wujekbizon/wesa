@@ -1,37 +1,14 @@
+import { outputLinesNode } from "@/src/data/codeSnippets";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
-
-interface Chunk {
-  id: number;
-  position: "source" | "transit" | "buffer" | "consumed";
-}
 
 export const NodejsVisual = () => {
   const [stage, setStage] = useState<"idle" | "source" | "streaming" | "complete">("idle");
   const [chunks, setChunks] = useState<Chunk[]>([]);
   const [renderedLines, setRenderedLines] = useState(0);
-
   const stageRef = useRef(stage);
   const chunksRef = useRef<Chunk[]>([]);
   const nextIdRef = useRef(0);
-
-  const outputLines = [
-    "<!DOCTYPE html>",
-    "<html>",
-    "  <head>",
-    "    <title>Streaming Content</title>",
-    '    <meta charset="utf-8">',
-    "  </head>",
-    "  <body>",
-    "    <header>",
-    "      <h1>Real-time Stream</h1>",
-    "    </header>",
-    "    <main>",
-    "      <p>Content delivered as it arrives</p>",
-    "    </main>",
-    "  </body>",
-    "</html>",
-  ];
 
   useEffect(() => {
     stageRef.current = stage;
@@ -46,7 +23,7 @@ export const NodejsVisual = () => {
     timers.push(
       window.setTimeout(() => {
         setStage("complete");
-        setRenderedLines(outputLines.length);
+        setRenderedLines(outputLinesNode.length);
       }, 20000)
     );
 
@@ -76,7 +53,7 @@ export const NodejsVisual = () => {
     const renderInterval = window.setInterval(() => {
       if (stageRef.current === "streaming") {
         const consumedCount = chunksRef.current.filter((c) => c.position === "consumed").length;
-        setRenderedLines((prev) => Math.min(consumedCount, outputLines.length));
+        setRenderedLines((prev) => Math.min(consumedCount, outputLinesNode.length));
       }
     }, 1100);
 
@@ -105,7 +82,7 @@ export const NodejsVisual = () => {
           />
         </div>
 
-        <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-6 md:gap-4 h-full">
+        <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-4 h-full">
           <div className="shrink-0 w-full md:w-48">
             <AnimatePresence mode="wait">
               {stage !== "idle" && (
@@ -182,7 +159,7 @@ export const NodejsVisual = () => {
             </motion.div>
           </div>
 
-          <div className="shrink-0 w-full md:w-56">
+          <div className="shrink-0 w-full md:w-56 pb-20">
             <AnimatePresence mode="wait">
               {(stage === "streaming" || stage === "complete") && (
                 <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="bg-gray-800/80 backdrop-blur rounded-lg border border-blue-500/30 p-4">
@@ -199,21 +176,21 @@ export const NodejsVisual = () => {
                   <div className="bg-gray-900/50 rounded border border-gray-700 p-2 min-h-[160px] md:min-h-[180px] overflow-hidden">
                     <div className="space-y-0.5 text-[9px] md:text-[10px] font-mono">
                       <AnimatePresence>
-                        {outputLines.slice(0, renderedLines).map((line, idx) => (
+                        {outputLinesNode.slice(0, renderedLines).map((line, idx) => (
                           <motion.div key={idx} initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.3 }} className="text-gray-300">
                             {line}
                           </motion.div>
                         ))}
                       </AnimatePresence>
 
-                      {renderedLines < outputLines.length && stage === "streaming" && (
+                      {renderedLines < outputLinesNode.length && stage === "streaming" && (
                         <motion.span animate={{ opacity: [1, 0, 1] }} transition={{ duration: 0.8, repeat: Infinity }} className="inline-block w-1.5 h-3 bg-blue-400" />
                       )}
                     </div>
                   </div>
 
                   <div className="mt-3 text-[10px] text-gray-400 text-center">
-                    Rendered: <span className="text-blue-400 font-semibold">{renderedLines}</span> / {outputLines.length}
+                    Rendered: <span className="text-blue-400 font-semibold">{renderedLines}</span> / {outputLinesNode.length}
                   </div>
 
                   {stage === "complete" && (
@@ -253,7 +230,7 @@ export const NodejsVisual = () => {
         {stage === "complete" && (
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }} className="mt-4 md:mt-6 text-center">
             <p className="text-xs md:text-sm text-gray-600">
-              Efficient streaming for modern applications • <span className="text-amber-400 font-semibold">Engineered by WESA</span>
+              Efficient streaming for modern applications • <span className="text-amber-300 font-semibold">Engineered by WESA</span>
             </p>
           </motion.div>
         )}

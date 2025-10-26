@@ -1,23 +1,19 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { renderColoredCode } from '@/src/helpers/renderColoredCode'
+import { codeExampleTypescript } from '@/src/data/codeSnippets'
 
 export const TypescriptVisual = () => {
     const [typedCode, setTypedCode] = useState('')
     const [stage, setStage] = useState<'idle' | 'typing' | 'errors-appear' | 'types-appear' | 'autocomplete' | 'validation' | 'complete'>('idle')
     const [hoveredType, setHoveredType] = useState<string | null>(null)
 
-    const codeExample = `function getUserData(id) {
-  const user = fetchUser(id)
-  return user.name.toUpperCase()
-}`
-
     useEffect(() => {
         setStage('typing')
         let codeIndex = 0
         const codeInterval = setInterval(() => {
-            if (codeIndex <= codeExample.length) {
-                setTypedCode(codeExample.slice(0, codeIndex))
+            if (codeIndex <= codeExampleTypescript.length) {
+                setTypedCode(codeExampleTypescript.slice(0, codeIndex))
                 codeIndex++
             } else {
                 clearInterval(codeInterval)
@@ -34,9 +30,9 @@ export const TypescriptVisual = () => {
 
     return (
         <div className="w-full">
-            <div className="flex flex-col lg:flex-row gap-4 md:gap-6">
+            <div className="flex flex-col  lg:flex-row gap-4 md:gap-6">
                 <div className="flex-1 min-h-[300px] md:min-h-[380px]">
-                    <div className="bg-gray-900 rounded-lg border border-gray-800 h-full overflow-hidden relative">
+                    <div className="bg-gray-900 rounded-lg border border-gray-800 h-[300px] md:h-[380px] overflow-hidden relative">
                         <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-800 bg-gray-800/50">
                             <div className="flex gap-1.5">
                                 <div className="w-3 h-3 rounded-full bg-red-500/80" />
@@ -63,7 +59,7 @@ export const TypescriptVisual = () => {
 
                         <div className="p-4 md:p-6 font-mono text-xs md:text-sm relative h-[calc(100%-48px)]">
                             {renderColoredCode(typedCode)}
-                            {typedCode.length < codeExample.length && (
+                            {typedCode.length < codeExampleTypescript.length && (
                                 <motion.span
                                     animate={{ opacity: [1, 0, 1] }}
                                     transition={{ duration: 0.8, repeat: Infinity }}
@@ -145,7 +141,7 @@ export const TypescriptVisual = () => {
                     </div>
                 </div>
                 <div className="flex-1 min-h-[300px] md:min-h-[380px]">
-                    <div className="bg-gray-900 rounded-lg border border-gray-800 h-full overflow-hidden relative">
+                    <div className="bg-gray-900 rounded-lg border border-gray-800 h-[300px] md:h-[380px] overflow-hidden relative">
                         <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-800 bg-gray-800/50">
                             <div className="flex gap-1.5">
                                 <div className="w-3 h-3 rounded-full bg-red-500/80" />
@@ -173,7 +169,7 @@ export const TypescriptVisual = () => {
 
                         <div className="p-4 md:p-6 font-mono text-xs md:text-sm relative h-[calc(100%-48px)]">
                             {renderColoredCode(typedCode)}
-                            {typedCode.length < codeExample.length && (
+                            {typedCode.length < codeExampleTypescript.length && (
                                 <motion.span
                                     animate={{ opacity: [1, 0, 1] }}
                                     transition={{ duration: 0.8, repeat: Infinity }}
@@ -187,7 +183,7 @@ export const TypescriptVisual = () => {
                                         <motion.div
                                             initial={{ opacity: 0, x: -10 }}
                                             animate={{ opacity: 1, x: 0 }}
-                                            className="absolute hidden md:block cursor-pointer"
+                                            className="absolute block cursor-pointer"
                                             style={{ top: '28px', left: '230px' }}
                                             onMouseEnter={() => setHoveredType('string')}
                                             onMouseLeave={() => setHoveredType(null)}
@@ -216,7 +212,7 @@ export const TypescriptVisual = () => {
                                             initial={{ opacity: 0, x: -10 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             transition={{ delay: 0.2 }}
-                                            className="absolute hidden md:block cursor-pointer"
+                                            className="absolute block cursor-pointer"
                                             style={{ top: '53px', left: '240px' }}
                                             onMouseEnter={() => setHoveredType('user')}
                                             onMouseLeave={() => setHoveredType(null)}
@@ -253,7 +249,7 @@ export const TypescriptVisual = () => {
                                     <motion.div
                                         initial={{ opacity: 0, y: -10, scale: 0.95 }}
                                         animate={{ opacity: 1, y: 0, scale: 1 }}
-                                        className="absolute hidden md:block bg-gray-800 border border-gray-700 rounded shadow-2xl overflow-hidden z-10"
+                                        className="absolute block bg-gray-800 border border-gray-700 rounded shadow-2xl overflow-hidden z-10"
                                         style={{ top: '90px', left: '176px', width: '192px' }}
                                     >
                                         <div className="text-xs">
@@ -345,7 +341,7 @@ export const TypescriptVisual = () => {
                             transition={{ delay: 0.3 }}
                             className="text-xs md:text-sm text-gray-600"
                         >
-                            Type-safe code, fewer bugs, faster development • <span className="text-amber-400 font-semibold">Built by WESA</span>
+                            Type-safe code, fewer bugs, faster development • <span className="text-amber-300 font-semibold">Built by WESA</span>
                         </motion.p>
                     </motion.div>
                 )}
