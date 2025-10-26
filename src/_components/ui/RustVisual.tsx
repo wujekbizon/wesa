@@ -1,32 +1,9 @@
+import { rustCodeLines } from "@/src/data/codeSnippets";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 
-interface Thread {
-  id: number;
-  x: number;
-  y: number;
-  color: string;
-  active: boolean;
-}
-
-interface OwnedBox {
-  id: number;
-  scope: "scope1" | "scope2" | "scope3";
-  transitioning: boolean;
-}
-
-interface AsyncTask {
-  id: number;
-  progress: number;
-  status: "pending" | "running" | "complete";
-  color: string;
-}
-
-type Phase = "idle" | "coding" | "borrowcheck" | "compiling" | "running" | "complete";
-type DemoType = "threads" | "ownership" | "async";
-
 export const RustVisual = () => {
-  const [phase, setPhase] = useState<Phase>("idle");
+  const [phase, setPhase] = useState<PhaseRust>("idle");
   const [demoType, setDemoType] = useState<DemoType>("threads");
   const [borrowCheckProgress, setBorrowCheckProgress] = useState(0);
   const [compilationProgress, setCompilationProgress] = useState(0);
@@ -42,19 +19,10 @@ export const RustVisual = () => {
   const boxIdRef = useRef(0);
   const taskIdRef = useRef(0);
 
-  const rustCodeLines = [
-    "fn process_data(data: Vec<i32>) {",
-    "  let shared = Arc::new(Mutex::new(data));",
-    "  let handles: Vec<_> = (0..4)",
-    "    .map(|_| thread::spawn(...))",
-    "}",
-  ];
-
   useEffect(() => {
     phaseRef.current = phase;
   }, [phase]);
 
-  // Reset state when demo type changes
   useEffect(() => {
     if (demoType === "threads") {
       setThreads([]);
@@ -66,7 +34,6 @@ export const RustVisual = () => {
     }
   }, [demoType]);
 
-  // Phase transitions
   useEffect(() => {
     const timers: number[] = [];
 
@@ -79,7 +46,6 @@ export const RustVisual = () => {
     return () => timers.forEach((t) => clearTimeout(t));
   }, []);
 
-  // Borrow checker progress
   useEffect(() => {
     if (phase === "borrowcheck") {
       const interval = window.setInterval(() => {
@@ -89,7 +55,6 @@ export const RustVisual = () => {
     }
   }, [phase]);
 
-  // Compilation progress
   useEffect(() => {
     if (phase === "compiling") {
       const interval = window.setInterval(() => {
@@ -99,7 +64,6 @@ export const RustVisual = () => {
     }
   }, [phase]);
 
-  // Demo simulation
   useEffect(() => {
     if (phase === "running" || phase === "complete") {
       let lastTime = Date.now();
@@ -115,7 +79,6 @@ export const RustVisual = () => {
         const deltaTime = currentTime - lastTime;
         lastTime = currentTime;
 
-        // Throughput calculation
         operationCount += 10;
         throughputTimer += deltaTime;
         if (throughputTimer >= 1000) {
@@ -124,12 +87,10 @@ export const RustVisual = () => {
           throughputTimer = 0;
         }
 
-        // Threads demo
         if (demoType === "threads") {
           setThreads((prev) => {
             let newThreads = [...prev];
-            
-            // Add new threads
+
             if (newThreads.length < 8 && Math.random() > 0.85) {
               const colors = ["#f97316", "#ef4444", "#ec4899", "#a855f7", "#3b82f6"];
               newThreads.push({
@@ -141,7 +102,6 @@ export const RustVisual = () => {
               });
             }
 
-            // Update threads (simulate work)
             newThreads = newThreads.map((t) => ({
               ...t,
               x: (t.x + (Math.random() - 0.5) * 3 + 100) % 100,
@@ -149,12 +109,10 @@ export const RustVisual = () => {
               active: Math.random() > 0.02,
             }));
 
-            // Remove inactive threads
             return newThreads.filter((t) => t.active);
           });
         }
 
-        // Ownership demo
         if (demoType === "ownership") {
           setOwnedBoxes((prev) => {
             if (prev.length === 0) {
@@ -172,12 +130,10 @@ export const RustVisual = () => {
           });
         }
 
-        // Async tasks demo
         if (demoType === "async") {
           setAsyncTasks((prev) => {
             let newTasks = [...prev];
 
-            // Add new tasks
             if (newTasks.length < 6 && Math.random() > 0.92) {
               const colors = ["#f97316", "#ef4444", "#ec4899", "#a855f7", "#3b82f6", "#10b981"];
               newTasks.push({
@@ -188,7 +144,6 @@ export const RustVisual = () => {
               });
             }
 
-            // Update tasks
             newTasks = newTasks.map((t) => {
               if (t.status === "pending" && Math.random() > 0.7) {
                 return { ...t, status: "running" as const };
@@ -203,7 +158,6 @@ export const RustVisual = () => {
               return t;
             });
 
-            // Remove completed tasks
             return newTasks.filter((t) => t.status !== "complete" || t.progress < 100);
           });
         }
@@ -224,7 +178,6 @@ export const RustVisual = () => {
   return (
     <div className="w-full">
       <div className="relative min-h-[440px] md:min-h-[520px] bg-linear-to-br from-gray-900 via-orange-950/20 to-gray-900 rounded-xl border-2 border-gray-700 overflow-hidden p-4 md:p-8">
-        {/* Background grid */}
         <div className="absolute inset-0 opacity-5">
           <div
             className="absolute inset-0"
@@ -235,8 +188,6 @@ export const RustVisual = () => {
             }}
           />
         </div>
-
-        {/* Phase indicator */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -266,9 +217,7 @@ export const RustVisual = () => {
             </div>
           </div>
         </motion.div>
-
         <div className="relative pt-12 h-full">
-          {/* CODING PHASE */}
           <AnimatePresence mode="wait">
             {phase === "coding" && (
               <motion.div
@@ -317,8 +266,6 @@ export const RustVisual = () => {
               </motion.div>
             )}
           </AnimatePresence>
-
-          {/* BORROW CHECKER PHASE */}
           <AnimatePresence mode="wait">
             {phase === "borrowcheck" && (
               <motion.div
@@ -374,8 +321,6 @@ export const RustVisual = () => {
               </motion.div>
             )}
           </AnimatePresence>
-
-          {/* COMPILING PHASE */}
           <AnimatePresence mode="wait">
             {phase === "compiling" && (
               <motion.div
@@ -431,8 +376,6 @@ export const RustVisual = () => {
               </motion.div>
             )}
           </AnimatePresence>
-
-          {/* RUNNING PHASE */}
           <AnimatePresence>
             {(phase === "running" || phase === "complete") && (
               <motion.div
@@ -443,7 +386,6 @@ export const RustVisual = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="flex flex-col md:flex-row gap-4 items-stretch justify-between min-h-[360px]"
               >
-                {/* Demo Type Selector */}
                 <div className="w-full md:w-48 shrink-0">
                   <div className="bg-gray-800/80 border-2 border-orange-500/30 rounded-lg p-3 shadow-xl">
                     <div className="text-[10px] text-gray-400 font-semibold mb-2">Demo Type:</div>
@@ -471,9 +413,7 @@ export const RustVisual = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* Demo Canvas */}
-                <div className="flex-1 min-w-0">
+                <div className="flex-1 min-w-0 pb-17">
                   <div className="bg-gray-800/80 border-2 border-orange-500/30 rounded-lg p-4 shadow-xl">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="w-8 h-8 rounded-lg bg-orange-500/20 flex items-center justify-center shrink-0">
@@ -484,8 +424,6 @@ export const RustVisual = () => {
                         <div className="text-[10px] text-orange-400 font-mono">Fearless Concurrency</div>
                       </div>
                     </div>
-
-                    {/* Canvas */}
                     <div className="relative bg-gray-900 rounded border-2 border-gray-700 overflow-hidden w-full h-[200px]">
                       {/* Threads Demo */}
                       {demoType === "threads" && (
@@ -516,8 +454,6 @@ export const RustVisual = () => {
                           )}
                         </div>
                       )}
-
-                      {/* Ownership Demo */}
                       {demoType === "ownership" && (
                         <div className="absolute inset-0 flex items-center justify-around p-4">
                           {["scope1", "scope2", "scope3"].map((scope) => (
@@ -546,8 +482,6 @@ export const RustVisual = () => {
                           ))}
                         </div>
                       )}
-
-                      {/* Async Tasks Demo */}
                       {demoType === "async" && (
                         <div className="absolute inset-0 p-3 space-y-2 overflow-hidden">
                           <AnimatePresence>
@@ -590,8 +524,6 @@ export const RustVisual = () => {
                         </div>
                       )}
                     </div>
-
-                    {/* Performance Metrics */}
                     <div className="mt-3 grid grid-cols-2 gap-2">
                       <div className="bg-gray-900/50 rounded border border-gray-700 p-2">
                         <div className="text-[9px] text-gray-400">Safety Score</div>
@@ -618,8 +550,6 @@ export const RustVisual = () => {
             )}
           </AnimatePresence>
         </div>
-
-        {/* Bottom Info */}
         <AnimatePresence>
           {phase === "complete" && (
             <motion.div
@@ -648,8 +578,6 @@ export const RustVisual = () => {
           )}
         </AnimatePresence>
       </div>
-
-      {/* Footer */}
       <AnimatePresence>
         {phase === "complete" && (
           <motion.div
@@ -658,8 +586,8 @@ export const RustVisual = () => {
             transition={{ delay: 0.5 }}
             className="mt-4 md:mt-6 text-center"
           >
-            <p className="text-xs md:text-sm text-gray-400">
-              Rust Safety Guarantee • <span className="text-amber-400 font-semibold">Engineered by WESA</span>
+            <p className="text-xs md:text-sm text-gray-600">
+              <span className="text-orange-600 text-sm font-semibold">Rust</span> Safety Guarantee • <span className="text-amber-300 font-semibold">Engineered by WESA</span>
             </p>
           </motion.div>
         )}

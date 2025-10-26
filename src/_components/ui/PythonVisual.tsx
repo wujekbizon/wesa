@@ -1,18 +1,6 @@
-import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
-
-interface Token {
-    id: number;
-    text: string;
-    type: "text" | "code" | "data";
-}
-
-interface Message {
-    role: "user" | "assistant";
-    content: string;
-}
-
-type Phase = "idle" | "training" | "trained" | "inference" | "complete";
+import { motion, AnimatePresence } from "framer-motion";
+import { trainingDataTokens } from "@/src/data/techs";
 
 export const PythonVisual = () => {
     const [phase, setPhase] = useState<Phase>("idle");
@@ -25,23 +13,9 @@ export const PythonVisual = () => {
     const [messages, setMessages] = useState<Message[]>([]);
     const [streamingResponse, setStreamingResponse] = useState("");
     const [responseComplete, setResponseComplete] = useState(false);
-
     const phaseRef = useRef(phase);
     const tokenIdRef = useRef(0);
     const inferenceTokensRef = useRef<string[]>([]);
-
-    const trainingDataTokens = [
-        { text: "Machine", type: "text" as const },
-        { text: "learning", type: "text" as const },
-        { text: "models", type: "text" as const },
-        { text: "def", type: "code" as const },
-        { text: "train", type: "code" as const },
-        { text: "neural", type: "data" as const },
-        { text: "network", type: "data" as const },
-        { text: "AI", type: "text" as const },
-        { text: "processes", type: "text" as const },
-        { text: "data", type: "data" as const },
-    ];
 
     const userQuestion = "What is machine learning?";
     const userQuestionTokens = ["What", "is", "machine", "learning", "?"];
@@ -49,7 +23,6 @@ export const PythonVisual = () => {
         "Machine learning is a method of data analysis that automates analytical model building.";
     const aiResponseTokens = aiResponse.split(" ");
 
-    // Keep refs in sync
     useEffect(() => {
         phaseRef.current = phase;
     }, [phase]);
@@ -58,9 +31,6 @@ export const PythonVisual = () => {
         inferenceTokensRef.current = inferenceTokens;
     }, [inferenceTokens]);
 
-    // -----------------------------
-    //  MAIN PHASE FLOW
-    // -----------------------------
     useEffect(() => {
         const timers: number[] = [];
 
@@ -71,7 +41,6 @@ export const PythonVisual = () => {
             }, 10000)
         );
 
-        // Smooth transition to inference
         timers.push(
             window.setTimeout(() => {
                 setPhase("inference");
@@ -84,9 +53,6 @@ export const PythonVisual = () => {
         return () => timers.forEach(clearTimeout);
     }, []);
 
-    // -----------------------------
-    //  TRAINING ANIMATION LOOP
-    // -----------------------------
     useEffect(() => {
         if (phase !== "training") return;
         const interval = window.setInterval(() => {
@@ -115,9 +81,6 @@ export const PythonVisual = () => {
         return () => clearInterval(interval);
     }, [phase]);
 
-    // -----------------------------
-    //  INFERENCE TOKENIZATION
-    // -----------------------------
     useEffect(() => {
         if (phase !== "inference") return;
 
@@ -155,9 +118,6 @@ export const PythonVisual = () => {
         };
     }, [phase]);
 
-    // -----------------------------
-    //  FINAL RESPONSE MESSAGE
-    // -----------------------------
     useEffect(() => {
         if (responseComplete) {
             setMessages((prev) => [...prev, { role: "assistant", content: aiResponse }]);
@@ -175,7 +135,6 @@ export const PythonVisual = () => {
         }
     };
 
-    // Shared transition props
     const fadeSlide = {
         initial: { opacity: 0, x: 30 },
         animate: { opacity: 1, x: 0 },
@@ -186,7 +145,6 @@ export const PythonVisual = () => {
     return (
         <div className="w-full">
             <div className="relative min-h-[420px] md:min-h-[500px] bg-linear-to-br from-gray-50 via-white to-blue-50 rounded-xl border-2 border-gray-300 overflow-hidden p-4 md:p-8">
-                {/* Background grid */}
                 <div className="absolute inset-0 opacity-[0.03]">
                     <div
                         className="absolute inset-0"
@@ -197,8 +155,6 @@ export const PythonVisual = () => {
                         }}
                     />
                 </div>
-
-                {/* Phase indicator */}
                 <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -237,13 +193,11 @@ export const PythonVisual = () => {
                     </div>
                 </motion.div>
 
-                <div className="relative pt-12 h-full">
-                    {/* TRAINING PHASE */}
+                <div className="relative pt-12 pb-20 h-full">
                     <AnimatePresence mode="wait">
                         {(phase === "training" || phase === "trained") && (
                             //@ts-ignore
                             <motion.div {...fadeSlide} className="flex flex-col md:flex-row gap-6 items-start justify-between">
-                                {/* Training Data Input */}
                                 <div className="w-full md:w-56">
                                     <div className="bg-white border-2 border-blue-300 rounded-lg p-4 shadow-sm">
                                         <div className="flex items-center gap-2 mb-3">
@@ -255,7 +209,6 @@ export const PythonVisual = () => {
                                                 <div className="text-[10px] text-blue-600 font-mono">Documents</div>
                                             </div>
                                         </div>
-
                                         <div className="space-y-2">
                                             <div className="text-[9px] text-gray-600 font-semibold">Tokenization:</div>
                                             <div className="flex gap-1 flex-wrap">
@@ -278,8 +231,6 @@ export const PythonVisual = () => {
                                         </div>
                                     </div>
                                 </div>
-
-                                {/* Neural Network Visualization */}
                                 <div className="flex-1">
                                     <div className="bg-white border-2 border-orange-300 rounded-lg p-4 shadow-sm">
                                         <div className="flex items-center gap-2 mb-3">
@@ -314,7 +265,6 @@ export const PythonVisual = () => {
                                             ))}
                                         </div>
 
-                                        {/* Progress bars */}
                                         <div className="space-y-3">
                                             <div>
                                                 <div className="flex justify-between text-[9px] text-gray-600 mb-1">
@@ -367,14 +317,12 @@ export const PythonVisual = () => {
                         )}
                     </AnimatePresence>
 
-                    {/* INFERENCE PHASE */}
                     <AnimatePresence mode="wait">
                         {(phase === "inference" || phase === "complete") && (
                             //@ts-ignore
-                            <motion.div {...fadeSlide} className="flex flex-col md:flex-row gap-6 items-start justify-between">
-                                {/* Chat interface */}
-                                <div className="w-full md:w-64">
-                                    <div className="bg-white border-2 border-indigo-300 rounded-lg p-4 shadow-sm">
+                            <motion.div {...fadeSlide} className="h-full w-full flex flex-col md:flex-row gap-6 items-start justify-between">
+                                <div className="flex-1 w-full h-full">
+                                    <div className="bg-white border-2 min-h-[304px] border-indigo-300 rounded-lg p-4 shadow-sm">
                                         <div className="flex items-center gap-2 mb-3">
                                             <div className="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center">
                                                 <span className="text-indigo-600 text-lg">💬</span>
@@ -427,9 +375,7 @@ export const PythonVisual = () => {
                                         </div>
                                     </div>
                                 </div>
-
-                                {/* Model Processing */}
-                                <div className="flex-1">
+                                <div className="flex-2 w-full">
                                     <div className="bg-white border-2 border-purple-300 rounded-lg p-4 shadow-sm">
                                         <div className="flex items-center gap-2 mb-3">
                                             <div className="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center">
@@ -440,8 +386,6 @@ export const PythonVisual = () => {
                                                 <div className="text-[10px] text-purple-600 font-mono">Generating Response</div>
                                             </div>
                                         </div>
-
-                                        {/* Attention/Processing visualization */}
                                         <div className="mb-4 flex justify-center items-center gap-2 min-h-[60px]">
                                             {inferenceTokens.length === userQuestionTokens.length && (
                                                 <>
@@ -474,8 +418,6 @@ export const PythonVisual = () => {
                                                 </>
                                             )}
                                         </div>
-
-                                        {/* AI Response */}
                                         <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 min-h-[100px]">
                                             <div className="text-[9px] text-gray-600 font-semibold mb-2">AI Response:</div>
                                             <div className="text-[10px] text-gray-700 leading-relaxed">
@@ -505,8 +447,6 @@ export const PythonVisual = () => {
                         )}
                     </AnimatePresence>
                 </div>
-
-                {/* Bottom Legend */}
                 <AnimatePresence>
                     {phase === "complete" && (
                         <motion.div
@@ -550,7 +490,7 @@ export const PythonVisual = () => {
                         className="mt-4 md:mt-6 text-center"
                     >
                         <p className="text-xs md:text-sm text-gray-600">
-                            LLM Training & Inference Pipeline • <span className="text-amber-400 font-semibold">Engineered by WESA</span>
+                            LLM Training & Inference Pipeline • <span className="text-amber-300 font-semibold">Engineered by WESA</span>
                         </p>
                     </motion.div>
                 )}

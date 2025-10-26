@@ -118,7 +118,7 @@ export default function Technologies() {
                                                     transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
                                                     className="overflow-hidden border-x border-b border-gray-800/50 bg-black/40"
                                                 >
-                                                    <div className="px-6 py-8">
+                                                    <div className="px-2 sm:px-6 py-2 sm:py-8">
                                                         {tech.visual === 'react' && <ReactVisual />}
                                                         {tech.visual === 'docker' && <DockerVisual />}
                                                         {tech.visual === 'kubernetes' && <KubernetesVisual />}

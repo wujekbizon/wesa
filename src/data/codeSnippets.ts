@@ -45,3 +45,11 @@ export const outputLinesNode = [
   "  </body>",
   "</html>",
 ];
+
+export const rustCodeLines = [
+  "fn process_data(data: Vec<i32>) {",
+  "  let shared = Arc::new(Mutex::new(data));",
+  "  let handles: Vec<_> = (0..4)",
+  "    .map(|_| thread::spawn(...))",
+  "}",
+];

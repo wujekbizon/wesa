@@ -75,3 +75,16 @@ export const techCategories: TechCategory[] = [
         ]
     }
 ]
+
+export const trainingDataTokens = [
+    { text: "Machine", type: "text" as const },
+    { text: "learning", type: "text" as const },
+    { text: "models", type: "text" as const },
+    { text: "def", type: "code" as const },
+    { text: "train", type: "code" as const },
+    { text: "neural", type: "data" as const },
+    { text: "network", type: "data" as const },
+    { text: "AI", type: "text" as const },
+    { text: "processes", type: "text" as const },
+    { text: "data", type: "data" as const },
+];
