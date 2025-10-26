@@ -12,9 +12,6 @@ import { PythonVisual } from './ui/PythonVisual'
 import { RustVisual } from './ui/RustVisual'
 import { CppVisual } from './ui/CppVisual'
 import { NextjsVisual } from './ui/NextjsVisual'
-import { TailwindVisual } from './ui/TailwindVisual'
-
-
 
 export default function Technologies() {
     const [activeTech, setActiveTech] = useState<TechVisualType | null>(null)
@@ -132,7 +129,6 @@ export default function Technologies() {
                                                         {tech.visual === 'rust' && <RustVisual />}
                                                         {tech.visual === 'cpp' && <CppVisual />}
                                                         {tech.visual === 'nextjs' && <NextjsVisual />}
-                                                        {tech.visual === 'tailwind' && <TailwindVisual />}
                                                     </div>
                                                 </motion.div>
                                             )}

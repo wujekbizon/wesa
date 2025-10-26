@@ -8,7 +8,7 @@ export const DockerVisual = () => {
                 {[...Array(5)].map((_, i) => (
                     <motion.div
                         key={i}
-                        className="absolute inset-x-0 h-8 bg-gradient-to-r from-blue-500/10 to-blue-600/20 border-2 border-blue-600/40"
+                        className="absolute inset-x-0 h-8 bg-linear-to-r from-blue-500/10 to-blue-600/20 border-2 border-blue-600/40"
                         initial={{
                             opacity: 0,
                             y: 200,
@@ -46,7 +46,7 @@ export const DockerVisual = () => {
                             ))}
                         </div>
                         <motion.div
-                            className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent"
+                            className="absolute inset-0 bg-linear-to-b from-white/10 to-transparent"
                             animate={{ opacity: [0, 0.5, 0] }}
                             transition={{
                                 duration: 2,

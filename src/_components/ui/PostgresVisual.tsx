@@ -14,7 +14,7 @@ export const PostgresVisual = () => {
                         transition={{ delay: i * 0.15, duration: 0.6, ease: [0.34, 1.56, 0.64, 1] }}
                     >
                         <motion.div
-                            className="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-500/30 via-blue-600/40 to-transparent"
+                            className="absolute inset-y-0 left-0 bg-linear-to-r from-blue-500/30 via-blue-600/40 to-transparent"
                             initial={{ width: "0%" }}
                             animate={{ width: `${60 + i * 10}%` }}
                             transition={{
@@ -24,7 +24,7 @@ export const PostgresVisual = () => {
                             }}
                         />
                         <motion.div
-                            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+                            className="absolute inset-0 bg-linear-to-r from-transparent via-white/30 to-transparent"
                             animate={{
                                 x: ["-100%", "200%"]
                             }}
