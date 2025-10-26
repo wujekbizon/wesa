@@ -1,6 +1,7 @@
-import { renderColoredCode } from '@/src/helpers/renderColoredCode'
-import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { fullCodeReact } from '@/src/data/codeSnippets'
+import { renderColoredCode } from '@/src/helpers/renderColoredCode'
 
 export const ReactVisual = () => {
     const [typedCode, setTypedCode] = useState('')
@@ -9,44 +10,25 @@ export const ReactVisual = () => {
     const [showCounter, setShowCounter] = useState(false)
     const [showButton, setShowButton] = useState(false)
 
-    const fullCode = `import React from 'react'
-
-function Counter() {
-  const [count, setCount] = React.useState(0)
-  
-  return (
-    <div>
-      <h1>Count: {count}</h1>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  )
-}`
-
     useEffect(() => {
         let index = 0
         const interval = setInterval(() => {
-            if (index <= fullCode.length) {
-                const currentCode = fullCode.slice(0, index)
+            if (index <= fullCodeReact.length) {
+                const currentCode = fullCodeReact.slice(0, index)
                 setTypedCode(currentCode)
-                
-                // Progressive rendering based on what's been typed
-                // Show div structure when return is complete
+
                 if (currentCode.includes('return (') && currentCode.includes('<div>')) {
                     setShowComponent(true)
                 }
-                
-                // Show counter when useState is complete
+
                 if (currentCode.includes('useState(0)')) {
                     setShowCounter(true)
                 }
-                
-                // Show button when onClick is typed
+
                 if (currentCode.includes('onClick')) {
                     setShowButton(true)
                 }
-                
+
                 index++
             } else {
                 clearInterval(interval)
@@ -61,7 +43,6 @@ function Counter() {
     return (
         <div className="w-full">
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                {/* Code Panel */}
                 <div className="flex-1 min-h-[280px] md:min-h-[320px]">
                     <div className="bg-gray-900 rounded-lg border border-gray-800 h-full overflow-hidden">
                         <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-800 bg-gray-800/50">
@@ -72,7 +53,7 @@ function Counter() {
                             </div>
                             <span className="text-xs text-gray-400 font-mono ml-2">Counter.jsx</span>
                         </div>
-                        <div className="p-4 md:p-6 font-mono text-xs md:text-sm overflow-auto h-[calc(100%-48px)]">
+                        <div className="p-2 md:p-4 font-mono text-xs md:text-sm overflow-auto">
                             {renderColoredCode(typedCode)}
                             <motion.span
                                 animate={{ opacity: [1, 0, 1] }}
@@ -82,8 +63,6 @@ function Counter() {
                         </div>
                     </div>
                 </div>
-
-                {/* Preview Panel */}
                 <div className="flex-1 min-h-[280px] md:min-h-[320px]">
                     <div className="bg-white rounded-lg border border-gray-300 h-full overflow-hidden shadow-lg">
                         <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-300 bg-gray-100">
@@ -115,7 +94,6 @@ function Counter() {
                                                 </motion.h1>
                                             )}
                                         </AnimatePresence>
-                                        
                                         <AnimatePresence>
                                             {showButton && (
                                                 <>
@@ -131,11 +109,10 @@ function Counter() {
                                                         }}
                                                         whileHover={isButtonActive ? { scale: 1.05 } : {}}
                                                         whileTap={isButtonActive ? { scale: 0.95 } : {}}
-                                                        className={`inline-block px-6 py-3 rounded-lg font-semibold text-white transition-all ${
-                                                            isButtonActive 
-                                                                ? 'bg-cyan-600 hover:bg-cyan-700 cursor-pointer shadow-lg' 
+                                                        className={`inline-block px-6 py-3 rounded-lg font-semibold text-white transition-all ${isButtonActive
+                                                                ? 'bg-cyan-600 hover:bg-cyan-700 cursor-pointer shadow-lg'
                                                                 : 'bg-gray-400 cursor-not-allowed'
-                                                        }`}
+                                                            }`}
                                                     >
                                                         Click me
                                                     </motion.div>
@@ -146,7 +123,7 @@ function Counter() {
                                                             transition={{ delay: 0.3 }}
                                                             className="mt-4 text-sm text-gray-500"
                                                         >
-                                                            ✨ Try clicking the button!
+                                                            Try Clicking the button!
                                                         </motion.p>
                                                     )}
                                                 </>
@@ -159,14 +136,14 @@ function Counter() {
                     </div>
                 </div>
             </div>
-            
+
             <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: typedCode.length === fullCode.length ? 1 : 0 }}
+                animate={{ opacity: typedCode.length === fullCodeReact.length ? 1 : 0 }}
                 className="mt-4 text-center"
             >
-                <p className="text-xs md:text-sm text-gray-600">
-                    <span className="text-cyan-500">React</span> makes building interactive UIs simple and declarative
+                <p className="text-xs md:text-sm text-gray-700">
+                    <span className="text-cyan-400 font-semibold">React</span> makes building interactive UIs simple and declarative
                 </p>
             </motion.div>
         </div>

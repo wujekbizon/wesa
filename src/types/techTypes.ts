@@ -1,4 +1,4 @@
-type TechVisualType = 'react' | 'nextjs' | 'vue' | 'tailwind' | 'typescript' | 'nodejs' | 'python' | 'rust' | 'cpp' | 'postgres' | 'docker' | 'kubernetes';
+type TechVisualType = 'react' | 'nextjs' | 'typescript' | 'nodejs' | 'python' | 'rust' | 'cpp' | 'postgres' | 'docker' | 'kubernetes';
 
 interface TechItem {
     name: string;

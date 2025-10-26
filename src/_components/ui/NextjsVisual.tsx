@@ -1,3 +1,4 @@
+import { fullCodeNext } from '@/src/data/codeSnippets'
 import { renderColoredCode } from '@/src/helpers/renderColoredCode'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
@@ -7,26 +8,16 @@ export const NextjsVisual = () => {
     const [typedUrl, setTypedUrl] = useState('')
     const [stage, setStage] = useState<'idle' | 'typing-url' | 'request' | 'server' | 'fetching' | 'rendering' | 'complete'>('idle')
 
-    const fullCode = `// app/products/page.tsx
-export default async function Products() {
-  const res = await fetch('/api/products')
-  const products = await res.json()
-  
-  return <ProductList items={products} />
-}`
-
     const targetUrl = '/products'
 
     useEffect(() => {
-        // Stage 1: Type the code
         let codeIndex = 0
         const codeInterval = setInterval(() => {
-            if (codeIndex <= fullCode.length) {
-                setTypedCode(fullCode.slice(0, codeIndex))
+            if (codeIndex <= fullCodeNext.length) {
+                setTypedCode(fullCodeNext.slice(0, codeIndex))
                 codeIndex++
             } else {
                 clearInterval(codeInterval)
-                // Stage 2: Start URL typing after code is done
                 setTimeout(() => {
                     setStage('typing-url')
                     let urlIndex = 0
@@ -36,7 +27,6 @@ export default async function Products() {
                             urlIndex++
                         } else {
                             clearInterval(urlInterval)
-                            // Stage 3: Show request flow
                             setTimeout(() => setStage('request'), 300)
                             setTimeout(() => setStage('server'), 800)
                             setTimeout(() => setStage('fetching'), 1300)
@@ -54,7 +44,6 @@ export default async function Products() {
     return (
         <div className="w-full">
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
-                {/* Code Panel */}
                 <div className="flex-1 min-h-[280px] md:min-h-[360px]">
                     <div className="bg-gray-900 rounded-lg border border-gray-800 h-full overflow-hidden">
                         <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-800 bg-gray-800/50">
@@ -67,7 +56,7 @@ export default async function Products() {
                         </div>
                         <div className="p-4 md:p-6 font-mono text-xs md:text-sm overflow-auto h-[calc(100%-48px)]">
                             {renderColoredCode(typedCode)}
-                            {typedCode.length < fullCode.length && (
+                            {typedCode.length < fullCodeNext.length && (
                                 <motion.span
                                     animate={{ opacity: [1, 0, 1] }}
                                     transition={{ duration: 0.8, repeat: Infinity }}
@@ -77,10 +66,8 @@ export default async function Products() {
                         </div>
                     </div>
                 </div>
-
-                {/* Flow Visualization Panel */}
                 <div className="flex-1 min-h-[280px] md:min-h-[360px]">
-                    <div className="bg-lienar-to-br from-gray-50 to-gray-100 rounded-lg border border-gray-300 h-full overflow-hidden shadow-lg">
+                    <div className="bg-linear-to-br from-gray-50 to-gray-100 rounded-lg border border-gray-300 h-full overflow-hidden shadow-lg">
                         <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-300 bg-white">
                             <div className="flex gap-1.5">
                                 <div className="w-3 h-3 rounded-full bg-gray-300" />
@@ -91,7 +78,6 @@ export default async function Products() {
                         </div>
                         
                         <div className="p-6 md:p-8 h-[calc(100%-48px)] flex flex-col justify-center">
-                            {/* Browser */}
                             <motion.div
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={{ opacity: stage !== 'idle' ? 1 : 0, y: stage !== 'idle' ? 0 : -20 }}
@@ -120,8 +106,6 @@ export default async function Products() {
                                     </div>
                                 </div>
                             </motion.div>
-
-                            {/* Arrow Down */}
                             <AnimatePresence>
                                 {stage !== 'idle' && stage !== 'typing-url' && (
                                     <motion.div
@@ -132,7 +116,7 @@ export default async function Products() {
                                         <motion.div
                                             animate={{ y: [0, 5, 0] }}
                                             transition={{ duration: 1, repeat: Infinity }}
-                                            className="text-2xl text-blue-500"
+                                            className="text-2xl text-slate-600"
                                         >
                                             ↓
                                         </motion.div>
@@ -142,8 +126,6 @@ export default async function Products() {
                                     </motion.div>
                                 )}
                             </AnimatePresence>
-
-                            {/* Server */}
                             <AnimatePresence>
                                 {(stage === 'server' || stage === 'fetching' || stage === 'rendering' || stage === 'complete') && (
                                     <motion.div
@@ -196,8 +178,6 @@ export default async function Products() {
                                     </motion.div>
                                 )}
                             </AnimatePresence>
-
-                            {/* Arrow Up */}
                             <AnimatePresence>
                                 {(stage === 'rendering' || stage === 'complete') && (
                                     <motion.div
@@ -208,7 +188,7 @@ export default async function Products() {
                                         <motion.div
                                             animate={{ y: [0, -5, 0] }}
                                             transition={{ duration: 1, repeat: Infinity }}
-                                            className="text-2xl text-green-500"
+                                            className="text-2xl text-zinc-500"
                                         >
                                             ↑
                                         </motion.div>
@@ -218,8 +198,6 @@ export default async function Products() {
                                     </motion.div>
                                 )}
                             </AnimatePresence>
-
-                            {/* Success Badge */}
                             <AnimatePresence>
                                 {stage === 'complete' && (
                                     <motion.div
@@ -237,14 +215,13 @@ export default async function Products() {
                     </div>
                 </div>
             </div>
-            
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: stage === 'complete' ? 1 : 0 }}
                 className="mt-4 text-center"
             >
                 <p className="text-xs md:text-sm text-gray-600">
-                    <span className="text-green-500">Next.js</span> renders on the server with data already fetched — fast, SEO-friendly, full-stack
+                    <span className="text-green-400 font-semibold">Next.js</span> renders on the server with data already fetched — fast, SEO-friendly, full-stack
                 </p>
             </motion.div>
         </div>
