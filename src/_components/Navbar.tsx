@@ -14,7 +14,6 @@ import Logo from '@/src/_components/ui/Logo'
 import MobileMenu from './ui/MobileMenu'
 import DesktopSubmenu from './ui/DesktopSubmenu'
 
-
 const Navbar = () => {
   const location = usePathname()
   const router = useRouter()
@@ -111,22 +110,6 @@ const Navbar = () => {
     }
   }
 
-  const architectureLink = links.find(l => l.label === 'Architecture')
-  if (architectureLink && activeSection) {
-    console.log('Architecture Debug:', {
-      hasSubmenu: !!architectureLink.submenu,
-      submenuLength: architectureLink.submenu?.length,
-      location,
-      activeSection,
-      submenuItems: architectureLink.submenu,
-      someResult: architectureLink.submenu?.some(item => {
-        const matches = item.url === location && item.hash === activeSection
-        console.log(`  ${item.label}: url=${item.url} hash=${item.hash} matches=${matches}`)
-        return matches
-      })
-    })
-  }
-
   return (
     <motion.header
       //@ts-ignore
@@ -196,7 +179,6 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
             className="cursor-pointer invert"
           />
-
           <MobileMenu
             toggle={toggle}
             setToggle={setToggle}
