@@ -103,6 +103,8 @@ export default function WhyChooseUs() {
 
   return (
     <section
+      id='why-choose-us'
+      data-nav-section
       ref={sectionRef}
       className="relative flex flex-col items-center justify-center py-20 overflow-hidden bg-black text-white px-4"
     >

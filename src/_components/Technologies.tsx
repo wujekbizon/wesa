@@ -18,7 +18,7 @@ export default function Technologies() {
     ]
 
     return (
-        <section id='technologies'>
+        <section id='technologies' data-nav-section>
             <div className="max-w-5xl mx-auto px-8 pt-32 pb-24">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

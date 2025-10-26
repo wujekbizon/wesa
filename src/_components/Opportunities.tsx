@@ -3,7 +3,7 @@ import { Users, TerminalSquare, ArrowRight } from 'lucide-react'
 
 export default function Opportunities() {
     return (
-        <section id='join' className="py-32 border-t border-gray-800">
+        <section id='join' data-nav-section className="py-32 border-t border-gray-800">
             <div className="max-w-5xl mx-auto px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

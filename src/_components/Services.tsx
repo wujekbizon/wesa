@@ -5,7 +5,7 @@ import FrontendServiceCard from './ui/FrontendServiceCard'
 
 export default function Services() {
     return (
-        <section id='services'>
+        <section id='services' data-nav-section>
             <div className="py-32">
                 <div className="max-w-6xl mx-auto px-6 lg:px-12">
                     <motion.div

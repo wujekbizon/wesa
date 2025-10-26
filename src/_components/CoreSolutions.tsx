@@ -137,6 +137,7 @@ export default function CoreSolutions() {
   return (
     <section
       id='core'
+      data-nav-section
       ref={containerRef}
       className="relative bg-black text-white py-24 md:py-32 overflow-hidden"
     >

@@ -35,7 +35,6 @@ const EncryptedTestimonials = () => {
   const [hasAnimated, setHasAnimated] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  // Generate random matrix characters
   const generateMatrixChars = () => {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*'
     const rows = 8
@@ -49,14 +48,12 @@ const EncryptedTestimonials = () => {
     setMatrixChars(generateMatrixChars())
   }, [])
 
-  // Intersection Observer for scroll trigger
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasAnimated) {
             setHasAnimated(true)
-            // Start animation sequence
             setTimeout(() => setStage('keyExchange'), 2000)
             setTimeout(() => setStage('unlocking'), 3500)
             setTimeout(() => setStage('decrypted'), 5000)
@@ -73,7 +70,6 @@ const EncryptedTestimonials = () => {
     return () => observer.disconnect()
   }, [hasAnimated])
 
-  // Rotate matrix characters
   useEffect(() => {
     if (stage === 'encrypted') {
       const interval = setInterval(() => {
@@ -92,15 +88,13 @@ const EncryptedTestimonials = () => {
   }
 
   return (
-    <div ref={containerRef} className="relative min-h-screen bg-linear-to-br from-amber-50 via-white to-amber-50 py-20 px-6 overflow-hidden">
-      {/* Background decorative elements */}
+    <section id='testimonials' data-nav-section ref={containerRef} className="relative min-h-screen bg-linear-to-br from-amber-50 via-white to-amber-50 py-20 px-6 overflow-hidden">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 bg-amber-400 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-300 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-6xl mx-auto">
-        {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -139,8 +133,6 @@ const EncryptedTestimonials = () => {
             Your data security isn't just a feature—it's our foundation.
           </motion.p>
         </motion.div>
-
-        {/* Main content area */}
         <div className="relative min-h-[500px] flex items-center justify-center">
           <AnimatePresence mode="wait">
             {stage === 'encrypted' && (
@@ -163,7 +155,6 @@ const EncryptedTestimonials = () => {
                     }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
-                    {/* Matrix effect */}
                     <div className="font-mono text-xs md:text-sm text-black/60 leading-relaxed overflow-hidden">
                       {matrixChars.map((row, i) => (
                         <motion.div
@@ -177,8 +168,6 @@ const EncryptedTestimonials = () => {
                         </motion.div>
                       ))}
                     </div>
-
-                    {/* Encryption indicator */}
                     <motion.div
                       className="absolute top-6 right-6 flex items-center gap-2 bg-black/20 px-4 py-2 rounded-full"
                       animate={{ opacity: [0.6, 1, 0.6] }}
@@ -208,8 +197,6 @@ const EncryptedTestimonials = () => {
                   >
                     <Key className="w-24 h-24 text-black" />
                   </motion.div>
-
-                  {/* Key exchange particles */}
                   {[...Array(8)].map((_, i) => (
                     <motion.div
                       key={i}
@@ -312,7 +299,6 @@ const EncryptedTestimonials = () => {
                     className="bg-linear-to-br from-amber-400 via-amber-400 to-amber-500 border-4 border-black rounded-3xl p-8 md:p-12 shadow-2xl"
                     layoutId="testimonial-card"
                   >
-                    {/* Security badge */}
                     <motion.div
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
@@ -330,7 +316,6 @@ const EncryptedTestimonials = () => {
                         transition={{ duration: 0.3 }}
                         className="space-y-6"
                       >
-                        {/* Stars */}
                         <div className="flex gap-1 justify-center">
                           {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
                             <motion.svg
@@ -345,8 +330,6 @@ const EncryptedTestimonials = () => {
                             </motion.svg>
                           ))}
                         </div>
-
-                        {/* Testimonial text */}
                         <motion.p 
                           className="text-xl md:text-2xl text-black font-medium text-center leading-relaxed"
                           initial={{ opacity: 0 }}
@@ -355,8 +338,6 @@ const EncryptedTestimonials = () => {
                         >
                           "{testimonials[currentTestimonial].content}"
                         </motion.p>
-
-                        {/* Author */}
                         <motion.div 
                           className="text-center pt-6 border-t-2 border-black/20"
                           initial={{ opacity: 0 }}
@@ -372,8 +353,6 @@ const EncryptedTestimonials = () => {
                         </motion.div>
                       </motion.div>
                     </AnimatePresence>
-
-                    {/* Navigation */}
                     {testimonials.length > 1 && (
                       <div className="flex justify-center gap-4 mt-8">
                         <motion.button
@@ -394,8 +373,6 @@ const EncryptedTestimonials = () => {
                         </motion.button>
                       </div>
                     )}
-
-                    {/* Dots indicator */}
                     {testimonials.length > 1 && (
                       <div className="flex justify-center gap-2 mt-6">
                         {testimonials.map((_, i) => (
@@ -412,8 +389,6 @@ const EncryptedTestimonials = () => {
                       </div>
                     )}
                   </motion.div>
-
-                  {/* Decorative floating elements */}
                   <motion.div
                     animate={{
                       y: [0, -15, 0],
@@ -444,7 +419,7 @@ const EncryptedTestimonials = () => {
           </AnimatePresence>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

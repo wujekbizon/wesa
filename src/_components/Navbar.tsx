@@ -1,17 +1,19 @@
 'use client'
 
 import { useEffect, useState, useRef } from 'react'
-import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { zoomIn } from '@/src/utils/motion'
-
-import { links, NavLink, SubMenuItem } from '@/src/data/links'
+import Link from 'next/link'
 import Image from 'next/image'
+import { ChevronDown, } from 'lucide-react'
+import { links, NavLink, SubMenuItem } from '@/src/data/links'
 import MenuSvg from '../../public/menu.svg'
 import CloseSvg from '../../public/close.svg'
 import Logo from '@/src/_components/ui/Logo'
+import MobileMenu from './ui/MobileMenu'
+import DesktopSubmenu from './ui/DesktopSubmenu'
+
 
 const Navbar = () => {
   const location = usePathname()
@@ -19,19 +21,44 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
   const [toggle, setToggle] = useState(false)
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null)
+  const [isHoveringSubmenu, setIsHoveringSubmenu] = useState(false)
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   const mobileLinks: NavLink[] = [{ label: 'Home', url: '/' }, ...links]
+
+  const [activeSection, setActiveSection] = useState<string>('')
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '-100px 0px -66%',
+      threshold: 0
+    }
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(`#${entry.target.id}`)
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
+    const sections = document.querySelectorAll('[data-nav-section][id]')
+    sections.forEach((section) => observer.observe(section))
+
+    return () => observer.disconnect()
+  }, [location])
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
       setScrolled(scrollTop > 50)
     }
-    
+
     window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll() // Check initial state
-    
+    handleScroll()
+
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -43,15 +70,25 @@ const Navbar = () => {
   }
 
   const handleMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => {
-      setActiveSubmenu(null)
-    }, 150)
+    if (!isHoveringSubmenu) {
+      timeoutRef.current = setTimeout(() => {
+        setActiveSubmenu(null)
+      }, 100)
+    }
   }
 
   const handleSubmenuMouseEnter = () => {
+    setIsHoveringSubmenu(true)
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current)
     }
+  }
+
+  const handleSubmenuMouseLeave = () => {
+    setIsHoveringSubmenu(false)
+    timeoutRef.current = setTimeout(() => {
+      setActiveSubmenu(null)
+    }, 100)
   }
 
   const handleNavClick = (e: React.MouseEvent, link: NavLink) => {
@@ -63,17 +100,31 @@ const Navbar = () => {
 
   const handleSubmenuClick = (item: SubMenuItem) => {
     setActiveSubmenu(null)
-    
-    // If navigating to same page, just scroll
+
     if (item.url === location) {
       const element = document.querySelector(item.hash)
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' })
       }
     } else {
-      // Navigate to new page with hash
       router.push(`${item.url}${item.hash}`)
     }
+  }
+
+  const architectureLink = links.find(l => l.label === 'Architecture')
+  if (architectureLink && activeSection) {
+    console.log('Architecture Debug:', {
+      hasSubmenu: !!architectureLink.submenu,
+      submenuLength: architectureLink.submenu?.length,
+      location,
+      activeSection,
+      submenuItems: architectureLink.submenu,
+      someResult: architectureLink.submenu?.some(item => {
+        const matches = item.url === location && item.hash === activeSection
+        console.log(`  ${item.label}: url=${item.url} hash=${item.hash} matches=${matches}`)
+        return matches
+      })
+    })
   }
 
   return (
@@ -82,149 +133,79 @@ const Navbar = () => {
       variants={zoomIn(0.1, 0.6)}
       initial="hidden"
       whileInView="show"
-      className={`fixed top-0 left-0 w-full py-4 z-50 transition-all duration-300 ease-in-out ${
-        scrolled 
-          ? 'bg-black shadow-lg' 
-          : 'bg-black/20 backdrop-blur-md'
-      }`}
+      className={`fixed top-0 left-0 w-full py-4 z-50 transition-all duration-300 ease-in-out ${scrolled
+        ? 'bg-black shadow-lg'
+        : 'bg-black/20 backdrop-blur-md'
+        }`}
     >
       <nav className="flex justify-between items-center max-w-7xl mx-auto px-4">
-        <Logo />
-
-        {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-8 items-center">
-          {links.map((link) => (
-            <li
-              key={link.label}
-              className="relative"
-              onMouseEnter={() => handleMouseEnter(link.label)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <button
-                onClick={(e) => handleNavClick(e, link)}
-                className={`flex items-center gap-1 text-white font-semibold hover:text-amber-500 transition-colors ${
-                  location === link.url ? 'text-amber-500' : ''
-                }`}
+        <div className="flex items-center gap-8">
+          <Logo />
+          <ul className="hidden lg:flex gap-6 items-center">
+            {links.map((link) => (
+              <li
+                key={link.label}
+                className="relative"
+                onMouseEnter={() => handleMouseEnter(link.label)}
+                onMouseLeave={handleMouseLeave}
               >
-                {link.label}
-                {link.submenu && (
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform duration-200 ${
-                      activeSubmenu === link.label ? 'rotate-180' : ''
-                    }`}
-                  />
-                )}
-              </button>
 
-              {/* Submenu Dropdown */}
-              <AnimatePresence>
-                {link.submenu && activeSubmenu === link.label && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-2 min-w-[280px]"
-                    onMouseEnter={handleSubmenuMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                  >
-                    <div className="bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden">
-                      <div className="py-2">
-                        {link.submenu.map((item, idx) => (
-                          <button
-                            key={`${item.label}-${idx}`}
-                            onClick={() => handleSubmenuClick(item)}
-                            className="w-full text-left px-6 py-3 text-gray-700 hover:bg-amber-50 hover:text-amber-600 transition-colors font-medium border-l-4 border-transparent hover:border-amber-500"
-                          >
-                            {item.label}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </li>
-          ))}
-        </ul>
-
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden">
-          <Image 
-            src={toggle ? CloseSvg : MenuSvg} 
-            alt="menu" 
-            onClick={() => setToggle(!toggle)} 
-            className="cursor-pointer" 
+                <button
+                  onClick={(e) => handleNavClick(e, link)}
+                  className={`flex items-center gap-1 text-white font-semibold hover:text-amber-500 transition-colors py-2 ${
+                    link.submenu?.some(item => item.url === location && item.hash === activeSection) ||
+                    (location === link.url && activeSection && link.submenu?.some(item => item.hash === activeSection)) ||
+                    (location === link.url && !activeSection)
+                      ? 'text-amber-500'
+                      : ''
+                  }`}
+                >
+                  {link.label}
+                  {link.submenu && (
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform duration-200 ${activeSubmenu === link.label ? 'rotate-180' : ''
+                        }`}
+                    />
+                  )}
+                </button>
+                <DesktopSubmenu
+                  isOpen={activeSubmenu === link.label}
+                  items={link.submenu}
+                  onMouseEnter={handleSubmenuMouseEnter}
+                  onMouseLeave={handleSubmenuMouseLeave}
+                  onItemClick={handleSubmenuClick}
+                  activeSection={activeSection}
+                  currentPath={location}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="hidden lg:block">
+          <Link
+            href="/docs"
+            className="px-4 py-2 text-sm bg-white text-black font-semibold rounded-lg hover:bg-amber-500 hover:text-white transition-all shadow-md hover:shadow-lg"
+          >
+            Documentation
+          </Link>
+        </div>
+        <div className="lg:hidden">
+          <Image
+            src={toggle ? CloseSvg : MenuSvg}
+            alt="menu"
+            onClick={() => setToggle(!toggle)}
+            className="cursor-pointer invert"
           />
 
-          <AnimatePresence>
-            {toggle && (
-              <motion.div
-                initial={{ opacity: 0, x: 300 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 300 }}
-                transition={{ duration: 0.3 }}
-                className="absolute top-full right-0 bg-black border-l border-gray-800 w-64 max-h-[calc(100vh-80px)] overflow-y-auto"
-              >
-                <ul className="py-4">
-                  {mobileLinks.map((link) => (
-                    <li key={link.label} className="border-b border-gray-800 last:border-b-0">
-                      {link.submenu ? (
-                        <div>
-                          <button
-                            onClick={() => setActiveSubmenu(activeSubmenu === link.label ? null : link.label)}
-                            className="w-full flex items-center justify-between px-6 py-4 text-white font-semibold hover:text-amber-500 transition-colors"
-                          >
-                            {link.label}
-                            <ChevronDown
-                              className={`w-4 h-4 transition-transform duration-200 ${
-                                activeSubmenu === link.label ? 'rotate-180' : ''
-                              }`}
-                            />
-                          </button>
-                          
-                          <AnimatePresence>
-                            {activeSubmenu === link.label && (
-                              <motion.div
-                                initial={{ height: 0, opacity: 0 }}
-                                animate={{ height: 'auto', opacity: 1 }}
-                                exit={{ height: 0, opacity: 0 }}
-                                transition={{ duration: 0.2 }}
-                                className="bg-gray-900 overflow-hidden"
-                              >
-                                {link.submenu.map((item, idx) => (
-                                  <button
-                                    key={`${item.label}-${idx}`}
-                                    onClick={() => {
-                                      handleSubmenuClick(item)
-                                      setToggle(false)
-                                    }}
-                                    className="w-full text-left px-8 py-3 text-gray-300 hover:text-amber-500 hover:bg-gray-800 transition-colors text-sm"
-                                  >
-                                    {item.label}
-                                  </button>
-                                ))}
-                              </motion.div>
-                            )}
-                          </AnimatePresence>
-                        </div>
-                      ) : (
-                        <Link
-                          href={link.url}
-                          onClick={() => setToggle(false)}
-                          className={`block px-6 py-4 text-white font-semibold hover:text-amber-500 transition-colors ${
-                            location === link.url ? 'text-amber-500' : ''
-                          }`}
-                        >
-                          {link.label}
-                        </Link>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          <MobileMenu
+            toggle={toggle}
+            setToggle={setToggle}
+            mobileLinks={mobileLinks}
+            location={location}
+            activeSubmenu={activeSubmenu}
+            setActiveSubmenu={setActiveSubmenu}
+            handleSubmenuClick={handleSubmenuClick}
+          />
         </div>
       </nav>
     </motion.header>

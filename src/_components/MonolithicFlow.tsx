@@ -53,6 +53,7 @@ export default function MonolithicFlow() {
     return (
         <motion.div
             id='monolithic'
+            data-nav-section
             ref={ref}
             style={{ opacity: containerOpacity, scale: containerScale }}
             className="min-h-screen flex items-center justify-center py-32 bg-black"
