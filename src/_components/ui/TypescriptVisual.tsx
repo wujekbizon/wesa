@@ -35,7 +35,6 @@ export const TypescriptVisual = () => {
     return (
         <div className="w-full">
             <div className="flex flex-col lg:flex-row gap-4 md:gap-6">
-                {/* Left Panel - JavaScript (Risky) */}
                 <div className="flex-1 min-h-[300px] md:min-h-[380px]">
                     <div className="bg-gray-900 rounded-lg border border-gray-800 h-full overflow-hidden relative">
                         <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-800 bg-gray-800/50">
@@ -47,7 +46,6 @@ export const TypescriptVisual = () => {
                             <span className="text-xs text-gray-400 font-mono ml-2">app.js</span>
                         </div>
 
-                        {/* Corner Badge */}
                         <AnimatePresence>
                             {(stage === 'errors-appear' || stage === 'types-appear') && (
                                 <motion.div
@@ -73,7 +71,6 @@ export const TypescriptVisual = () => {
                                 />
                             )}
                             
-                            {/* Error Squiggles - Hidden on mobile */}
                             <AnimatePresence>
                                 {(stage === 'errors-appear' || stage === 'types-appear') && (
                                     <div className="hidden md:block">
@@ -115,7 +112,6 @@ export const TypescriptVisual = () => {
                                 )}
                             </AnimatePresence>
 
-                            {/* Floating Error Icons */}
                             <AnimatePresence>
                                 {(stage === 'errors-appear' || stage === 'types-appear') && (
                                     <>
@@ -134,7 +130,6 @@ export const TypescriptVisual = () => {
                                 )}
                             </AnimatePresence>
 
-                            {/* Error Message */}
                             <AnimatePresence>
                                 {stage === 'types-appear' && (
                                     <motion.div
@@ -149,8 +144,6 @@ export const TypescriptVisual = () => {
                         </div>
                     </div>
                 </div>
-
-                {/* Right Panel - TypeScript (Safe) */}
                 <div className="flex-1 min-h-[300px] md:min-h-[380px]">
                     <div className="bg-gray-900 rounded-lg border border-gray-800 h-full overflow-hidden relative">
                         <div className="flex items-center gap-2 px-4 py-3 border-b border-gray-800 bg-gray-800/50">
@@ -188,11 +181,9 @@ export const TypescriptVisual = () => {
                                 />
                             )}
 
-                            {/* Type Annotations - Interactive */}
                             <AnimatePresence>
                                 {(stage === 'types-appear' || stage === 'autocomplete' || stage === 'validation' || stage === 'complete') && (
                                     <>
-                                        {/* : string annotation - Works perfectly */}
                                         <motion.div
                                             initial={{ opacity: 0, x: -10 }}
                                             animate={{ opacity: 1, x: 0 }}
@@ -221,7 +212,6 @@ export const TypescriptVisual = () => {
                                             </AnimatePresence>
                                         </motion.div>
 
-                                        {/* : User | null annotation - More realistic */}
                                         <motion.div
                                             initial={{ opacity: 0, x: -10 }}
                                             animate={{ opacity: 1, x: 0 }}
