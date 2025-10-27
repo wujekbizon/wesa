@@ -1,3 +1,9 @@
+import SoftwareArchitectureSection from "./SoftwareArchitectureSection";
+
 export default function Solutions() {
-  return <h1>Solutions Page</h1>;
+  return (
+    <>
+      <SoftwareArchitectureSection />
+    </>
+  )
 }
