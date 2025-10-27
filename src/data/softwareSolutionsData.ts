@@ -20,3 +20,9 @@ export const methodology = [
         "We identify potential failure points early and implement graceful degradation strategies."
     }
   ]
+
+export const badges = [
+  { value: "99.99%", label: "System Uptime" },
+  { value: "10M+", label: "Users Supported" },
+  { value: "60%", label: "Faster Deployments" },
+] 

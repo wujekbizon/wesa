@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from 'framer-motion';
 import { Network } from 'lucide-react';
 import architectureDiagram from "@/src/images/microservices.png";
+import { badges } from "../data/softwareSolutionsData";
 
 export default function SoftwareArchitectureHero() {
   return (
@@ -47,11 +48,7 @@ export default function SoftwareArchitectureHero() {
               solutions that handle growth, complexity, and change.
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-8">
-              {[
-                { value: "99.99%", label: "System Uptime" },
-                { value: "10M+", label: "Users Supported" },
-                { value: "60%", label: "Faster Deployments" },
-              ].map((stat) => (
+              {badges.map((stat) => (
                 <div key={stat.label}>
                   <div className="text-lg sm:text-xl md:text-2xl font-bold text-amber-400 mb-1">{stat.value}</div>
                   <div className="text-xs sm:text-sm text-gray-500 font-mono">{stat.label}</div>
