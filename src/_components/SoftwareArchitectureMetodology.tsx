@@ -2,13 +2,13 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Lock, BarChart3, Users } from 'lucide-react';
+
 import tier from "@/src/images/3-tier.png";
+import { methodology } from '../data/softwareSolutionsData';
 
 export default function SoftwareArchitectureMethodology() {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-b from-black via-zinc-950 to-black py-16 sm:py-20 md:py-28">
-      {/* Subtle background grid (COOL TECH VERSION) */}
+    <div className="relative overflow-hidden bg-linear-to-b from-black via-zinc-950 to-black py-16 sm:py-20 md:py-28">
       <div className="absolute inset-0 opacity-[0.1]">
         <div
           className="h-full w-full"
@@ -20,8 +20,7 @@ export default function SoftwareArchitectureMethodology() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12">
-        {/* HEADER SECTION */}
+      <div className="relative z-10 max-w-360 mx-auto px-4 sm:px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,9 +43,7 @@ export default function SoftwareArchitectureMethodology() {
           </p>
         </motion.div>
 
-        {/* GRID SECTION */}
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_2fr] gap-10 md:gap-14 lg:gap-20 items-center">
-          {/* LEFT SIDE CONTENT */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -54,26 +51,7 @@ export default function SoftwareArchitectureMethodology() {
             viewport={{ once: true }}
             className="order-1 text-center lg:text-left flex flex-col items-center lg:items-start space-y-6 sm:space-y-8"
           >
-            {[
-              {
-                icon: Users,
-                title: "Business-First Thinking",
-                description:
-                  "We understand your business model and growth trajectory before touching code."
-              },
-              {
-                icon: BarChart3,
-                title: "Metrics-Driven Design",
-                description:
-                  "Every architectural decision is informed by performance metrics and scalability projections."
-              },
-              {
-                icon: Lock,
-                title: "Risk Mitigation",
-                description:
-                  "We identify potential failure points early and implement graceful degradation strategies."
-              }
-            ].map((item, i) => {
+            {methodology.map((item, i) => {
               const Icon = item.icon;
               return (
                 <motion.div
@@ -96,8 +74,6 @@ export default function SoftwareArchitectureMethodology() {
               );
             })}
           </motion.div>
-
-          {/* RIGHT IMAGE (always order-2) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -105,7 +81,7 @@ export default function SoftwareArchitectureMethodology() {
             viewport={{ once: true }}
             className="order-2 relative"
           >
-            <div className="relative w-full aspect-[4/3] md:aspect-[16/10] lg:aspect-[16/9] bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-2xl overflow-hidden">
+            <div className="relative w-full aspect-4/3 md:aspect-16/10 lg:aspect-video bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-2xl overflow-hidden">
               <Image
                 src={tier}
                 alt="Three-tier architecture diagram"
