@@ -33,10 +33,10 @@ export default function SoftwareArchitectureChallenge() {
               The Challenge
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-zinc-900">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-zinc-900">
             Common Architecture Pitfalls
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
             Most businesses struggle with systems that weren’t designed for growth. Technical debt accumulates, and innovation becomes impossible.
           </p>
         </motion.div>

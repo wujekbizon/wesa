@@ -108,7 +108,7 @@ export default function SoftwareArchitectureSolutionsAndTech() {
                         </span>
                     </motion.div>
                     <motion.h2
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-linear-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-tight"
+                        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-linear-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent leading-tight"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
@@ -117,7 +117,7 @@ export default function SoftwareArchitectureSolutionsAndTech() {
                     </motion.h2>
 
                     <motion.p
-                        className="text-lg md:text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto"
+                        className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed max-w-2xl mx-auto"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
@@ -138,7 +138,7 @@ export default function SoftwareArchitectureSolutionsAndTech() {
                                         transition={{ duration: 0.5, delay: i * 0.1 }}
                                         onMouseEnter={() => setActiveCard(i)}
                                         onMouseLeave={() => setActiveCard(null)}
-                                        className="group relative"
+                                        className="group relative min-h-[250px] h-full"
                                     >
                                         <motion.div
                                             className={`absolute inset-0 bg-linear-to-r ${cap.color} blur-xl rounded-3xl`}
@@ -147,15 +147,14 @@ export default function SoftwareArchitectureSolutionsAndTech() {
                                             transition={{ duration: 0.3 }}
                                         />
                                         <motion.div
-                                            className="relative bg-zinc-900/70 backdrop-blur-sm border border-zinc-800/80 rounded-2xl p-7 transition-colors duration-300"
+                                            className="relative h-full bg-zinc-900/70 backdrop-blur-sm border border-zinc-800/80 hover:border-zinc-700/50 rounded-2xl p-7 transition-colors duration-300 flex flex-col"
                                             whileHover={{
                                                 y: -4,
-                                                borderColor: "rgba(113, 113, 122, 0.5)",
                                             }}
                                             transition={{ duration: 0.3 }}
                                         >
                                             <motion.div
-                                                className={`relative w-14 h-14 bg-linear-to-br ${cap.color} rounded-xl flex items-center justify-center mb-5 shadow-lg`}
+                                                className={`relative w-14 h-14 bg-linear-to-br ${cap.color} rounded-xl flex items-center justify-center mb-5 shadow-lg shrink-0`}
                                                 whileHover={{ scale: 1.05, rotate: 3 }}
                                                 transition={{ duration: 0.3 }}
                                             >
@@ -171,12 +170,14 @@ export default function SoftwareArchitectureSolutionsAndTech() {
                                                 )}
                                             </motion.div>
 
-                                            <h3 className="text-lg font-semibold mb-2.5 text-white group-hover:text-zinc-300 transition-colors duration-300">
-                                                {cap.title}
-                                            </h3>
-                                            <p className="text-gray-500 text-sm leading-relaxed group-hover:text-gray-400 transition-colors duration-300">
-                                                {cap.description}
-                                            </p>
+                                            <div className="flex-1 flex flex-col">
+                                                <h3 className="text-lg font-semibold mb-2.5 text-white group-hover:text-zinc-300 transition-colors duration-300">
+                                                    {cap.title}
+                                                </h3>
+                                                <p className="text-gray-500 text-sm leading-relaxed group-hover:text-gray-400 transition-colors duration-300">
+                                                    {cap.description}
+                                                </p>
+                                            </div>
 
                                             <motion.div
                                                 className="absolute top-4 right-4 w-1.5 h-1.5 bg-zinc-500 rounded-full"
@@ -192,7 +193,7 @@ export default function SoftwareArchitectureSolutionsAndTech() {
                     </div>
                     <div className="lg:col-span-5">
                         <motion.div
-                            className="sticky top-8 bg-linear-to-br from-zinc-900/90 via-zinc-900/80 to-zinc-950/90 rounded-2xl border border-zinc-800/70 p-8 shadow-2xl backdrop-blur-sm"
+                            className="flex flex-col h-full bg-linear-to-br from-zinc-900/90 via-zinc-900/80 to-zinc-950/90 rounded-2xl border border-zinc-800/70 p-8 shadow-2xl backdrop-blur-sm"
                             initial={{ opacity: 0, x: 30 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6, delay: 0.3 }}

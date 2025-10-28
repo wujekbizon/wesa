@@ -34,11 +34,11 @@ export default function SoftwareArchitectureMethodology() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
             Built for <span className="text-sky-400">Growth</span>
           </h2>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed">
             We don’t just design systems — we architect solutions that anticipate your business evolution.
           </p>
         </motion.div>

@@ -27,7 +27,7 @@ export default function SoftwareArchitectureStudy() {
                             Featured Case Study
                         </span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-zinc-900">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-zinc-900">
                         E-commerce Platform Transformation
                     </h2>
                 </motion.div>
