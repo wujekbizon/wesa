@@ -26,8 +26,8 @@ export default function SoftwareArchitectureHero() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2 }}
+            viewport={{ once: true, margin: "0px 0px -100px 0px"  }}
             className="order-1 text-center lg:text-left flex flex-col items-center lg:items-start space-y-5 sm:space-y-6"
           >
             <div className="inline-block px-3 py-1 bg-amber-500/10 border border-amber-500/20 rounded-full">

@@ -33,7 +33,7 @@ export default function SoftwareArchitectureProcessAndCTA() {
     ];
 
     return (
-        <section className="relative bg-gradient-to-b from-zinc-950 via-black to-zinc-950 py-20 md:py-32">
+        <section className="relative bg-linear-to-b from-zinc-950 via-black to-zinc-950 py-20 md:py-32">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Process Timeline */}
                 <motion.div
@@ -58,7 +58,7 @@ export default function SoftwareArchitectureProcessAndCTA() {
 
                 <div className="relative mb-20">
                     {/* Connection Line */}
-                    <div className="hidden md:block absolute top-16 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-zinc-700 to-transparent" />
+                    <div className="hidden md:block absolute top-16 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-zinc-700 to-transparent" />
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                         {timelineSteps.map((step, index) => {
@@ -87,7 +87,7 @@ export default function SoftwareArchitectureProcessAndCTA() {
                                     } rounded-2xl p-6 transition-all duration-300 hover:border-zinc-700`}>
                                         <div className={`w-16 h-16 ${
                                             step.highlight 
-                                                ? 'bg-gradient-to-br from-amber-500 to-amber-600' 
+                                                ? 'bg-linear-to-br from-amber-500 to-amber-600' 
                                                 : 'bg-zinc-800'
                                         } rounded-xl flex items-center justify-center mx-auto mb-4`}>
                                             <Icon className={`w-8 h-8 ${
@@ -142,7 +142,7 @@ export default function SoftwareArchitectureProcessAndCTA() {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.97 }}
-                        className="group relative inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-7 md:px-8 py-2.5 sm:py-3 md:py-4 rounded-xl border border-amber-500/30 bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 text-amber-400 font-semibold text-sm sm:text-base md:text-lg transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20"
+                        className="group relative inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-7 md:px-8 py-2.5 sm:py-3 md:py-4 rounded-xl border border-amber-500/30 bg-linear-to-r from-zinc-900 via-zinc-800 to-zinc-900 text-amber-400 font-semibold text-sm sm:text-base md:text-lg transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/20"
                     >
                         <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 transition-transform group-hover:translate-x-1" />
                         <span>Get Architecture Consultation</span>

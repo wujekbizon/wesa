@@ -4,6 +4,7 @@ export default function Solutions() {
   return (
     <>
       <SoftwareArchitectureSection />
+      
     </>
   )
 }

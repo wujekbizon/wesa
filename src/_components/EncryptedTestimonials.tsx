@@ -3,30 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Lock, Unlock, Key, Shield, ChevronLeft, ChevronRight } from 'lucide-react'
-
-const testimonials = [
-  {
-    id: 1,
-    name: "Sarah Mitchell",
-    role: "CTO, TechVentures",
-    content: "WESA's architectural expertise transformed our platform. Their attention to security and scalability is unmatched.",
-    rating: 5
-  },
-  {
-    id: 2,
-    name: "David Chen",
-    role: "Founder, StartupHub",
-    content: "Working with WESA was a game-changer. They delivered a cutting-edge solution that exceeded our expectations.",
-    rating: 5
-  },
-  {
-    id: 3,
-    name: "Emma Rodriguez",
-    role: "VP Engineering, DataFlow",
-    content: "The team's expertise in modern web applications and secure architecture is exceptional. Highly recommended!",
-    rating: 5
-  }
-]
+import { testimonials } from '../data/testimonials'
 
 const EncryptedTestimonials = () => {
   const [stage, setStage] = useState('encrypted') // encrypted -> keyExchange -> unlocking -> decrypted
@@ -88,7 +65,7 @@ const EncryptedTestimonials = () => {
   }
 
   return (
-    <section id='testimonials' data-nav-section ref={containerRef} className="relative min-h-screen bg-linear-to-br from-amber-50 via-white to-amber-50 py-20 px-6 overflow-hidden">
+    <section id='testimonials' data-nav-section ref={containerRef} className="relative bg-linear-to-br from-amber-50 via-white to-amber-50 py-20 px-6 overflow-hidden">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-64 h-64 bg-amber-400 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-300 rounded-full blur-3xl" />

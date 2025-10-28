@@ -10,7 +10,7 @@ import SoftwareArchitectureProcessAndCTA from './SoftwareArchitectureProcessAndC
 export default function SoftwareArchitectureSection() {
 
     return (
-        <section id="software-architecture" className="relative bg-black text-white">
+        <section id="software-architecture">
             <SoftwareArchitectureHero />
             <SoftwareArchitectureChallenge />
             <SoftwareArchitectureMethodology />
