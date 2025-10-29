@@ -9,7 +9,7 @@ import { badges } from "../data/softwareSolutionsData";
 
 export default function SoftwareArchitectureHero() {
   return (
-    <div className="relative overflow-hidden bg-linear-to-b from-black via-zinc-950 to-black py-16 sm:py-20 md:py-24 lg:py-32">
+    <div className="relative overflow-hidden bg-linear-to-b h-[100vh-90px] from-black via-zinc-950 to-black py-16 sm:py-20 md:py-24 lg:py-32">
       <div className="absolute inset-0 opacity-[0.15]">
         <div
           className="h-full w-full"
@@ -21,7 +21,7 @@ export default function SoftwareArchitectureHero() {
         />
       </div>
 
-      <div className="relative z-10 max-w-360 mx-auto px-4 sm:px-6 lg:px-12">
+      <div className="relative z-10 max-w-360 mx-auto px-4 sm:px-6 lg:px-12 py-6 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_2fr] gap-10 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}

@@ -36,6 +36,8 @@ export const links: NavLink[] = [
       { label: "Monolithic Architecture", url: "/", hash: "#monolithic" },
       { label: "Microservices Architecture", url: "/", hash: "#microservices" },
       { label: "Case Study", url: "/", hash: "#case-study" },
+      { label: "Global Reach", url: "/", hash: "#why-choose-us" },
+      { label: "Clients Testimonials", url: "/", hash: "#testimonials" },
     ],
   },
   {
@@ -57,8 +59,7 @@ export const links: NavLink[] = [
     label: "Customers",
     url: "/customers",
     submenu: [
-      { label: "Global Reach", url: "/", hash: "#why-choose-us" },
-      { label: "Clients Testimonials", url: "/", hash: "#testimonials" },
+
       { label: "Educational Software", url: "/customers", hash: "#medical" },
       { label: "AI Tools", url: "/customers", hash: "#ai" },
       {
@@ -118,7 +119,7 @@ export const descriptions: { [key: string]: string } = {
   "Mobile Development": "Native and cross-platform mobile solutions",
   "Global Reach": "Why industry leaders choose our solutions",
   "Clients Testimonials": "Success stories from our satisfied clients",
-  "Medical Educational Software": "HIPAA-compliant healthcare solutions",
+  "Educational Software": "Medical online learning platform",
   "AI Tools": "Machine learning and AI-powered applications",
   "Digital Interfaces": "Intuitive interfaces for complex systems",
   "Technologies We Work With": "Modern tech stack and frameworks we master",

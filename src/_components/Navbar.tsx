@@ -38,11 +38,10 @@ const Navbar = () => {
       variants={zoomIn(0.1, 0.6)}
       initial="hidden"
       whileInView="show"
-      className={`fixed top-0 left-0 w-full py-4 z-50 transition-all duration-300 ease-in-out ${
-        scrolled
+      className={`fixed top-0 left-0 w-full py-4 z-50 transition-all duration-300 ease-in-out ${scrolled
           ? 'bg-black shadow-lg'
           : 'bg-black/20 backdrop-blur-md'
-      }`}
+        }`}
     >
       <nav className="flex justify-between items-center max-w-7xl mx-auto px-4">
         <div className="flex items-center gap-8">
@@ -50,7 +49,7 @@ const Navbar = () => {
           <ul className="hidden lg:flex gap-6 items-center">
             {links.map((link) => {
               const isActive = isLinkActive(link, pathname, activeSection)
-              
+
               return (
                 <li
                   key={link.label}
@@ -60,19 +59,18 @@ const Navbar = () => {
                 >
                   <button
                     onClick={(e) => handleNavClick(e, link)}
-                    className={`flex items-center gap-1 text-white font-semibold hover:text-amber-500 transition-colors py-2 ${
-                      isActive ? 'text-amber-500' : ''
-                    }`}
+                    className={`flex items-center gap-1 font-semibold transition-colors py-2 
+            ${isActive ? 'text-amber-400' : 'text-white hover:text-amber-400'}`}
                   >
                     {link.label}
                     {link.submenu && (
                       <ChevronDown
-                        className={`w-4 h-4 transition-transform duration-200 ${
-                          activeSubmenu === link.label ? 'rotate-180' : ''
-                        }`}
+                        className={`w-4 h-4 transition-transform duration-200 ${activeSubmenu === link.label ? 'rotate-180' : ''
+                          }`}
                       />
                     )}
                   </button>
+
                   <DesktopSubmenu
                     isOpen={activeSubmenu === link.label}
                     items={link.submenu}

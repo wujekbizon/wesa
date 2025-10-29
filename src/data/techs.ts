@@ -1,3 +1,5 @@
+import { Code2, Palette, Zap } from "lucide-react";
+
 export const techCategories: TechCategory[] = [
     {
         category: 'Frontend',
@@ -88,3 +90,52 @@ export const trainingDataTokens = [
     { text: "processes", type: "text" as const },
     { text: "data", type: "data" as const },
 ];
+
+export const techStack = [
+    {
+      icon: Zap,
+      title: 'Next.js 16',
+      subtitle: 'The Foundation',
+      features: [
+        'Turbopack: 5-10x faster builds',
+        '"use cache" for optimal performance',
+        'React 19.2 with View Transitions',
+        'Built-in SEO optimization'
+      ],
+      color: 'cyan',
+      why: 'Blazing-fast development, optimal production performance'
+    },
+    {
+      icon: Code2,
+      title: 'React 19.2',
+      subtitle: '+ TypeScript',
+      features: [
+        'Activity components for seamless UX',
+        'Partial Pre-rendering',
+        'Type-safe development',
+        'Modern hooks & patterns'
+      ],
+      color: 'blue',
+      why: 'Bulletproof code, faster iterations, fewer bugs'
+    },
+    {
+      icon: Palette,
+      title: 'Tailwind v4',
+      subtitle: '+ Modern Tooling',
+      features: [
+        '5x faster builds',
+        'CSS-first configuration',
+        'Framer Motion animations',
+        'Component libraries'
+      ],
+      color: 'purple',
+      why: 'Rapid UI development, premium user experience'
+    }
+  ];
+
+  export const metrics = [
+    { label: 'Page Load', value: '<1s'},
+    { label: 'Mobile-First', value: '100%' },
+    { label: 'Time-to-Market', value: '3x' },
+    { label: 'Conversion Boost', value: '+7%' }
+  ];

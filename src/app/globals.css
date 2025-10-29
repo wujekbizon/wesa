@@ -110,6 +110,13 @@
 
 
 @layer utilities {
+
+  .section-title {
+    @apply text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold;
+  }
+  .section-subtitle {
+    @apply text-sm sm:text-base md:text-lg leading-relaxed;
+  }
   .scrollbar-thin {
     scrollbar-width: thin;
     scrollbar-color: #000000 rgb(0, 0, 0);

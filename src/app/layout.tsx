@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className} bg-black scrollbar-webkit`}>
         <Navbar />
-        <div className="pt-20">{children}</div>
+        <div>{children}</div>
       </body>
     </html>
   )
