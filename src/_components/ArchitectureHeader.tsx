@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function ArchitectureHeader() {
   return (
-    <div className="relative z-10 pt-32 pb-20 text-center bg-white">
+    <div id='architecture' data-nav-section className="relative z-10 pt-32 pb-20 text-center bg-white">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +24,7 @@ export default function ArchitectureHeader() {
         <span className="bg-linear-to-r from-amber-600 via-orange-600 to-amber-600 bg-clip-text text-transparent">
           Architecture We Use
         </span>
-      </motion.h2>
+      </motion.h2>p
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

@@ -1,0 +1,1918 @@
+{label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #architecture
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #monolithic
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+SoftwareArchitectureHero.tsx:67 Image with src "/_next/static/media/microservices.8cd63b64.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+overrideMethod @ hook.js:608
+overrideMethod @ forward-logs-shared.ts:95
+warnOnce @ warn-once.ts:6
+(anonymous) @ image-component.tsx:130
+Promise.then
+handleLoading @ image-component.tsx:77
+(anonymous) @ image-component.tsx:233
+applyRef @ use-merged-ref.ts:55
+(anonymous) @ use-merged-ref.ts:42
+commitAttachRef @ react-dom-client.development.js:13856
+runWithFiberInDEV @ react-dom-client.development.js:984
+safelyAttachRef @ react-dom-client.development.js:13874
+reappearLayoutEffects @ react-dom-client.development.js:16433
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16378
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16378
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16378
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16378
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+doubleInvokeEffectsOnFiber @ react-dom-client.development.js:20033
+runWithFiberInDEV @ react-dom-client.development.js:984
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:19998
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+commitDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20043
+flushPassiveEffects @ react-dom-client.development.js:19770
+flushPendingEffects @ react-dom-client.development.js:19689
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20276
+performWorkUntilDeadline @ scheduler.development.js:45
+<img>
+exports.jsx @ react-jsx-runtime.development.js:342
+(anonymous) @ image-component.tsx:259
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateForwardRef @ react-dom-client.development.js:10038
+beginWork @ react-dom-client.development.js:12431
+runWithFiberInDEV @ react-dom-client.development.js:984
+performUnitOfWork @ react-dom-client.development.js:18901
+workLoopConcurrentByScheduler @ react-dom-client.development.js:18895
+renderRootConcurrent @ react-dom-client.development.js:18877
+performWorkOnRoot @ react-dom-client.development.js:17739
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45
+<ForwardRef>
+exports.jsx @ react-jsx-runtime.development.js:342
+(anonymous) @ image-component.tsx:412
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateForwardRef @ react-dom-client.development.js:10038
+beginWork @ react-dom-client.development.js:12431
+runWithFiberInDEV @ react-dom-client.development.js:984
+performUnitOfWork @ react-dom-client.development.js:18901
+workLoopConcurrentByScheduler @ react-dom-client.development.js:18895
+renderRootConcurrent @ react-dom-client.development.js:18877
+performWorkOnRoot @ react-dom-client.development.js:17739
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45
+<ForwardRef>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:342
+SoftwareArchitectureHero @ SoftwareArchitectureHero.tsx:67
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateFunctionComponent @ react-dom-client.development.js:10480
+beginWork @ react-dom-client.development.js:12092
+runWithFiberInDEV @ react-dom-client.development.js:984
+performUnitOfWork @ react-dom-client.development.js:18901
+workLoopConcurrentByScheduler @ react-dom-client.development.js:18895
+renderRootConcurrent @ react-dom-client.development.js:18877
+performWorkOnRoot @ react-dom-client.development.js:17739
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45
+<SoftwareArchitectureHero>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:342
+SoftwareArchitectureSection @ SoftwareArchitectureSection.tsx:14
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateFunctionComponent @ react-dom-client.development.js:10480
+beginWork @ react-dom-client.development.js:12041
+replayBeginWork @ react-dom-client.development.js:18958
+runWithFiberInDEV @ react-dom-client.development.js:984
+replaySuspendedUnitOfWork @ react-dom-client.development.js:18922
+renderRootConcurrent @ react-dom-client.development.js:18805
+performWorkOnRoot @ react-dom-client.development.js:17739
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45
+"use client"
+SoftwareArchitecturePage @ page.tsx:5
+initializeElement @ react-server-dom-turbopack-client.browser.development.js:1877
+(anonymous) @ react-server-dom-turbopack-client.browser.development.js:4515
+initializeModelChunk @ react-server-dom-turbopack-client.browser.development.js:1768
+resolveModelChunk @ react-server-dom-turbopack-client.browser.development.js:1623
+processFullStringRow @ react-server-dom-turbopack-client.browser.development.js:4345
+processFullBinaryRow @ react-server-dom-turbopack-client.browser.development.js:4205
+processBinaryChunk @ react-server-dom-turbopack-client.browser.development.js:4418
+progress @ react-server-dom-turbopack-client.browser.development.js:4689
+<SoftwareArchitecturePage>
+Function.all @ VM31728 <anonymous>:1
+initializeFakeTask @ react-server-dom-turbopack-client.browser.development.js:3295
+initializeDebugInfo @ react-server-dom-turbopack-client.browser.development.js:3320
+initializeDebugChunk @ react-server-dom-turbopack-client.browser.development.js:1712
+processFullStringRow @ react-server-dom-turbopack-client.browser.development.js:4294
+processFullBinaryRow @ react-server-dom-turbopack-client.browser.development.js:4205
+processBinaryChunk @ react-server-dom-turbopack-client.browser.development.js:4418
+progress @ react-server-dom-turbopack-client.browser.development.js:4689
+"use server"
+ResponseInstance @ react-server-dom-turbopack-client.browser.development.js:2702
+createResponseFromOptions @ react-server-dom-turbopack-client.browser.development.js:4551
+exports.createFromFetch @ react-server-dom-turbopack-client.browser.development.js:4921
+createFromNextFetch @ fetch-server-response.ts:489
+createFetch @ fetch-server-response.ts:375
+fetchServerResponse @ fetch-server-response.ts:196
+navigateDynamicallyWithNoPrefetch @ navigation.ts:432
+navigate @ navigation.ts:198
+push.navigate @ segment-cache.ts:44
+navigateReducer @ navigate-reducer.ts:163
+clientReducer @ router-reducer.ts:30
+action @ app-router-instance.ts:227
+runAction @ app-router-instance.ts:107
+dispatchAction @ app-router-instance.ts:184
+dispatch @ app-router-instance.ts:225
+(anonymous) @ use-action-queue.ts:45
+startTransition @ react-dom-client.development.js:9198
+dispatch @ use-action-queue.ts:44
+dispatchAppRouterAction @ use-action-queue.ts:22
+dispatchNavigateAction @ app-router-instance.ts:296
+(anonymous) @ app-router-instance.ts:379
+startTransition @ react.development.js:554
+push @ app-router-instance.ts:378
+handleSubmenuClick @ useNavigation.tsx:98
+onClick @ DesktopSubmenu.tsx:48
+executeDispatch @ react-dom-client.development.js:20447
+runWithFiberInDEV @ react-dom-client.development.js:984
+processDispatchQueue @ react-dom-client.development.js:20497
+(anonymous) @ react-dom-client.development.js:21068
+batchedUpdates$1 @ react-dom-client.development.js:3375
+dispatchEventForPluginEventSystem @ react-dom-client.development.js:20651
+dispatchEvent @ react-dom-client.development.js:25580
+dispatchDiscreteEvent @ react-dom-client.development.js:25548
+<button>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:342
+(anonymous) @ DesktopSubmenu.tsx:46
+DesktopSubmenu @ DesktopSubmenu.tsx:43
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateFunctionComponent @ react-dom-client.development.js:10480
+beginWork @ react-dom-client.development.js:12092
+runWithFiberInDEV @ react-dom-client.development.js:984
+performUnitOfWork @ react-dom-client.development.js:18901
+workLoopSync @ react-dom-client.development.js:18729
+renderRootSync @ react-dom-client.development.js:18710
+performWorkOnRoot @ react-dom-client.development.js:17740
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45Understand this warning
+SoftwareArchitectureMetodology.tsx:85 Image with src "/_next/static/media/3-tier.c95711f9.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+overrideMethod @ hook.js:608
+overrideMethod @ forward-logs-shared.ts:95
+warnOnce @ warn-once.ts:6
+(anonymous) @ image-component.tsx:130
+Promise.then
+handleLoading @ image-component.tsx:77
+(anonymous) @ image-component.tsx:233
+applyRef @ use-merged-ref.ts:55
+(anonymous) @ use-merged-ref.ts:42
+commitAttachRef @ react-dom-client.development.js:13856
+runWithFiberInDEV @ react-dom-client.development.js:984
+safelyAttachRef @ react-dom-client.development.js:13874
+reappearLayoutEffects @ react-dom-client.development.js:16433
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16424
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16378
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16378
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16378
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16378
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16506
+recursivelyTraverseReappearLayoutEffects @ react-dom-client.development.js:16536
+reappearLayoutEffects @ react-dom-client.development.js:16370
+doubleInvokeEffectsOnFiber @ react-dom-client.development.js:20033
+runWithFiberInDEV @ react-dom-client.development.js:984
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:19998
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+recursivelyTraverseAndDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20004
+commitDoubleInvokeEffectsInDEV @ react-dom-client.development.js:20043
+flushPassiveEffects @ react-dom-client.development.js:19770
+flushPendingEffects @ react-dom-client.development.js:19689
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20276
+performWorkUntilDeadline @ scheduler.development.js:45
+<img>
+exports.jsx @ react-jsx-runtime.development.js:342
+(anonymous) @ image-component.tsx:259
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateForwardRef @ react-dom-client.development.js:10038
+beginWork @ react-dom-client.development.js:12431
+runWithFiberInDEV @ react-dom-client.development.js:984
+performUnitOfWork @ react-dom-client.development.js:18901
+workLoopConcurrentByScheduler @ react-dom-client.development.js:18895
+renderRootConcurrent @ react-dom-client.development.js:18877
+performWorkOnRoot @ react-dom-client.development.js:17739
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45
+<ForwardRef>
+exports.jsx @ react-jsx-runtime.development.js:342
+(anonymous) @ image-component.tsx:412
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateForwardRef @ react-dom-client.development.js:10038
+beginWork @ react-dom-client.development.js:12431
+runWithFiberInDEV @ react-dom-client.development.js:984
+performUnitOfWork @ react-dom-client.development.js:18901
+workLoopConcurrentByScheduler @ react-dom-client.development.js:18895
+renderRootConcurrent @ react-dom-client.development.js:18877
+performWorkOnRoot @ react-dom-client.development.js:17739
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45
+<ForwardRef>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:342
+SoftwareArchitectureMethodology @ SoftwareArchitectureMetodology.tsx:85
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateFunctionComponent @ react-dom-client.development.js:10480
+beginWork @ react-dom-client.development.js:12092
+runWithFiberInDEV @ react-dom-client.development.js:984
+performUnitOfWork @ react-dom-client.development.js:18901
+workLoopConcurrentByScheduler @ react-dom-client.development.js:18895
+renderRootConcurrent @ react-dom-client.development.js:18877
+performWorkOnRoot @ react-dom-client.development.js:17739
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45
+<SoftwareArchitectureMethodology>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:342
+SoftwareArchitectureSection @ SoftwareArchitectureSection.tsx:16
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateFunctionComponent @ react-dom-client.development.js:10480
+beginWork @ react-dom-client.development.js:12041
+replayBeginWork @ react-dom-client.development.js:18958
+runWithFiberInDEV @ react-dom-client.development.js:984
+replaySuspendedUnitOfWork @ react-dom-client.development.js:18922
+renderRootConcurrent @ react-dom-client.development.js:18805
+performWorkOnRoot @ react-dom-client.development.js:17739
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45
+"use client"
+SoftwareArchitecturePage @ page.tsx:5
+initializeElement @ react-server-dom-turbopack-client.browser.development.js:1877
+(anonymous) @ react-server-dom-turbopack-client.browser.development.js:4515
+initializeModelChunk @ react-server-dom-turbopack-client.browser.development.js:1768
+resolveModelChunk @ react-server-dom-turbopack-client.browser.development.js:1623
+processFullStringRow @ react-server-dom-turbopack-client.browser.development.js:4345
+processFullBinaryRow @ react-server-dom-turbopack-client.browser.development.js:4205
+processBinaryChunk @ react-server-dom-turbopack-client.browser.development.js:4418
+progress @ react-server-dom-turbopack-client.browser.development.js:4689
+<SoftwareArchitecturePage>
+Function.all @ VM31728 <anonymous>:1
+initializeFakeTask @ react-server-dom-turbopack-client.browser.development.js:3295
+initializeDebugInfo @ react-server-dom-turbopack-client.browser.development.js:3320
+initializeDebugChunk @ react-server-dom-turbopack-client.browser.development.js:1712
+processFullStringRow @ react-server-dom-turbopack-client.browser.development.js:4294
+processFullBinaryRow @ react-server-dom-turbopack-client.browser.development.js:4205
+processBinaryChunk @ react-server-dom-turbopack-client.browser.development.js:4418
+progress @ react-server-dom-turbopack-client.browser.development.js:4689
+"use server"
+ResponseInstance @ react-server-dom-turbopack-client.browser.development.js:2702
+createResponseFromOptions @ react-server-dom-turbopack-client.browser.development.js:4551
+exports.createFromFetch @ react-server-dom-turbopack-client.browser.development.js:4921
+createFromNextFetch @ fetch-server-response.ts:489
+createFetch @ fetch-server-response.ts:375
+fetchServerResponse @ fetch-server-response.ts:196
+navigateDynamicallyWithNoPrefetch @ navigation.ts:432
+navigate @ navigation.ts:198
+push.navigate @ segment-cache.ts:44
+navigateReducer @ navigate-reducer.ts:163
+clientReducer @ router-reducer.ts:30
+action @ app-router-instance.ts:227
+runAction @ app-router-instance.ts:107
+dispatchAction @ app-router-instance.ts:184
+dispatch @ app-router-instance.ts:225
+(anonymous) @ use-action-queue.ts:45
+startTransition @ react-dom-client.development.js:9198
+dispatch @ use-action-queue.ts:44
+dispatchAppRouterAction @ use-action-queue.ts:22
+dispatchNavigateAction @ app-router-instance.ts:296
+(anonymous) @ app-router-instance.ts:379
+startTransition @ react.development.js:554
+push @ app-router-instance.ts:378
+handleSubmenuClick @ useNavigation.tsx:98
+onClick @ DesktopSubmenu.tsx:48
+executeDispatch @ react-dom-client.development.js:20447
+runWithFiberInDEV @ react-dom-client.development.js:984
+processDispatchQueue @ react-dom-client.development.js:20497
+(anonymous) @ react-dom-client.development.js:21068
+batchedUpdates$1 @ react-dom-client.development.js:3375
+dispatchEventForPluginEventSystem @ react-dom-client.development.js:20651
+dispatchEvent @ react-dom-client.development.js:25580
+dispatchDiscreteEvent @ react-dom-client.development.js:25548
+<button>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:342
+(anonymous) @ DesktopSubmenu.tsx:46
+DesktopSubmenu @ DesktopSubmenu.tsx:43
+react_stack_bottom_frame @ react-dom-client.development.js:27925
+renderWithHooksAgain @ react-dom-client.development.js:8072
+renderWithHooks @ react-dom-client.development.js:7984
+updateFunctionComponent @ react-dom-client.development.js:10480
+beginWork @ react-dom-client.development.js:12092
+runWithFiberInDEV @ react-dom-client.development.js:984
+performUnitOfWork @ react-dom-client.development.js:18901
+workLoopSync @ react-dom-client.development.js:18729
+renderRootSync @ react-dom-client.development.js:18710
+performWorkOnRoot @ react-dom-client.development.js:17740
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:20288
+performWorkUntilDeadline @ scheduler.development.js:45Understand this warning
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/software-architecture
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/web
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/mobile
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions/design
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #web
+navigationUtils.ts:12 {label: 'Architecture', url: '/', submenu: Array(4)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Solutions', url: '/solutions', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Customers', url: '/customers', submenu: Array(5)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 {label: 'Developers', url: '/developers', submenu: Array(3)}
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core
+navigationUtils.ts:12 [object Object]
+navigationUtils.ts:13 /solutions
+navigationUtils.ts:14 #core

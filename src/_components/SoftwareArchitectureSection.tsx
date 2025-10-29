@@ -10,7 +10,7 @@ import SoftwareArchitectureProcessAndCTA from './SoftwareArchitectureProcessAndC
 export default function SoftwareArchitectureSection() {
 
     return (
-        <section id="software-architecture">
+        <section data-nav-section id="software-architecture">
             <SoftwareArchitectureHero />
             <SoftwareArchitectureChallenge />
             <SoftwareArchitectureMethodology />

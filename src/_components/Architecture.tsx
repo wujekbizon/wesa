@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef } from 'react';
-import { motion } from 'framer-motion';
 
 import MonolithicFlow from './MonolithicFlow';
 import MicroservicesFlow from './MicroservicesFlow';
@@ -12,8 +11,6 @@ export default function Architecture() {
 
   return (
     <section
-      id='architecture'
-      data-nav-section
       ref={containerRef}
       className="relative bg-black text-white overflow-hidden"
     >

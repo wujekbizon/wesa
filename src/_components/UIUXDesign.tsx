@@ -261,14 +261,14 @@ export default function UIUXDesign() {
   };
 
   return (
-    <section className="relative bg-gradient-to-b from-white via-gray-50 to-white py-20 md:py-48 overflow-hidden">
+    <section id='design' data-nav-section className="relative bg-gradient-to-b from-white via-gray-50 to-white py-20 md:py-48 overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
           
           {/* Left - Figma Mockup (3 columns - main attraction) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="lg:col-span-3 order-2 lg:order-1"
@@ -384,7 +384,7 @@ export default function UIUXDesign() {
           {/* Right - Content (2 columns - supporting) */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="space-y-6 lg:col-span-2 order-1 lg:order-2"
@@ -418,7 +418,7 @@ export default function UIUXDesign() {
                 <motion.div
                   key={item.title}
                   initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   viewport={{ once: true }}
                   className="flex items-start gap-3 p-3 rounded-lg bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow"

@@ -4,7 +4,7 @@ export default function ScrollButton({ tag, className = '' }: { tag: string; cla
     return (
         <div className={`${className} absolute bottom-30 left-1/2 -translate-x-1/2`}>
             <a href={`#${tag}`} className="block" aria-label="Scroll to explore section">
-                <div className="relative w-8 h-14 border-2 border-white/40 rounded-full backdrop-blur-sm bg-black/10">
+                <div className="relative w-8 h-14 border-2 border-white/40 hover:border-amber-400/60 rounded-full backdrop-blur-sm bg-black/10">
                     <motion.div
                         animate={{
                             y: [0, 24, 0],

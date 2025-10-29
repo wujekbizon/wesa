@@ -58,7 +58,7 @@ export default function MobileDevelopment() {
   ];
 
   return (
-    <section id='mobile'  className="min-h-[90vh] relative bg-white py-20 md:py-48 overflow-hidden">
+    <section id='mobile' data-nav-section className="relative bg-white py-20 md:py-48 overflow-hidden">
       <div className="absolute inset-0 bg-linear-to-b from-gray-50 via-white to-gray-50" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,7 +98,7 @@ export default function MobileDevelopment() {
                 <motion.div
                   key={feature.title}
                   initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   viewport={{ once: true }}
                   className="flex items-start gap-3 p-3 rounded-lg bg-gray-50 border border-gray-100"
@@ -123,7 +123,7 @@ export default function MobileDevelopment() {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="flex justify-center lg:col-span-3"
