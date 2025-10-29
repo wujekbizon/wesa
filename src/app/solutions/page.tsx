@@ -1,5 +1,7 @@
-import Solutions from '@/src/_components/Solutions';
+import CoreSolutions from "@/src/_components/CoreSolutions";
 
 export default function SolutionsPage() {
-  return <Solutions />;
+  return (
+    <CoreSolutions/>
+  )
 }

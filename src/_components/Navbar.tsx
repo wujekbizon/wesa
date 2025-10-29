@@ -99,14 +99,19 @@ const Navbar = () => {
 
   const handleSubmenuClick = (item: SubMenuItem) => {
     setActiveSubmenu(null)
-
+  
     if (item.url === location) {
-      const element = document.querySelector(item.hash)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
+      // If we're already on the page and there's a hash, scroll to it
+      if (item.hash) {
+        const element = document.querySelector(item.hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
       }
     } else {
-      router.push(`${item.url}${item.hash}`)
+      // Navigate to the URL, only append hash if it exists
+      const destination = item.hash ? `${item.url}${item.hash}` : item.url
+      router.push(destination)
     }
   }
 

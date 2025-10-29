@@ -18,7 +18,7 @@ import {
 export interface SubMenuItem {
   label: string
   url: string
-  hash: string
+  hash?: string
 }
 
 export interface NavLink {
@@ -42,15 +42,14 @@ export const links: NavLink[] = [
     label: "Solutions",
     url: "/solutions",
     submenu: [
-      { label: "Core Solutions", url: "/", hash: "#core" },
+      { label: "Core Solutions", url: "/solutions" },
       {
         label: "Software Architecture",
-        url: "/solutions",
-        hash: "#software-architecture",
+        url: "/solutions/software-architecture"
       },
-      { label: "Modern Web Apps", url: "/solutions", hash: "#web" },
-      { label: "UI/UX Design", url: "/solutions", hash: "#design" },
-      { label: "Mobile Development", url: "/solutions", hash: "#mobile" },
+      { label: "Modern Web Apps", url: "/solutions/web" },
+      { label: "UI/UX Design", url: "/solutions/design" },
+      { label: "Mobile Development", url: "/solutions/mobile" },
     ],
   },
   {

@@ -65,7 +65,7 @@ export default function MobileDevelopment() {
         <div className="grid lg:grid-cols-5 gap-16 lg:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="space-y-6 lg:col-span-2"

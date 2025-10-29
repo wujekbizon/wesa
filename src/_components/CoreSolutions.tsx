@@ -92,7 +92,7 @@ export default function CoreSolutions() {
     return (
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: index * 0.1 }}
         viewport={{ once: true }}
         className="group relative"
@@ -164,7 +164,7 @@ export default function CoreSolutions() {
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
             className="inline-block px-4 py-2 bg-amber-500/10 border-2 border-amber-500/20 rounded-full mb-6"
@@ -176,7 +176,7 @@ export default function CoreSolutions() {
 
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
             className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6"
@@ -188,7 +188,7 @@ export default function CoreSolutions() {
 
           <motion.p
             initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
             className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto"
