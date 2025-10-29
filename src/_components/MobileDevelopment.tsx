@@ -58,11 +58,11 @@ export default function MobileDevelopment() {
   ];
 
   return (
-    <section className="relative bg-white py-20 md:py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-linear-to-b from-gray-50 via-white to-gray-400" />
+    <section id='mobile'  className="min-h-[90vh] relative bg-white py-20 md:py-48 overflow-hidden">
+      <div className="absolute inset-0 bg-linear-to-b from-gray-50 via-white to-gray-50" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-5 gap-16 lg:gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
