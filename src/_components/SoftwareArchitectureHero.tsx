@@ -25,7 +25,7 @@ export default function SoftwareArchitectureHero() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_2fr] gap-10 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.2 }}
             viewport={{ once: true, margin: "0px 0px -100px 0px"  }}
             className="order-1 text-center lg:text-left flex flex-col items-center lg:items-start space-y-5 sm:space-y-6"
@@ -58,7 +58,7 @@ export default function SoftwareArchitectureHero() {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             className="order-2 relative"
@@ -77,7 +77,7 @@ export default function SoftwareArchitectureHero() {
         </div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
           viewport={{ once: true }}
           className="mt-10 sm:mt-12 flex justify-center lg:justify-end"
