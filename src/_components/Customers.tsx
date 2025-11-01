@@ -1,3 +1,7 @@
+import WolfmedShowcase from "./WolfmedShowcase";
+
 export default function Customers() {
-  return <h1>Customers Page</h1>;
+  return (
+    <WolfmedShowcase />
+  )
 }

@@ -150,13 +150,13 @@ const Hero = () => {
               <motion.div
                 // @ts-ignore
                 variants={itemVariants}
-                className="relative z-10 w-full max-w-md"
+                className="relative z-10 w-full flex flex-col items-center justify-center"
               >
                 <svg 
                   version="1.1" 
                   xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 200 550 200"
-                  className="w-full h-auto"
+                  className="w-full h-auto max-w-xs sm:max-w-sm"
                 >
                   <g fill="#fdf7e7">
                     <motion.path
@@ -190,16 +190,24 @@ const Hero = () => {
                     />
                   </g>
                 </svg>
+                <motion.h2
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.1, duration: 0.6 }}
+                  className="text-xl xs:text-2xl sm:text-3xl lg:text-5xl text-center font-bold text-zinc-900 -mt-4"
+                >
+                  AI & Software Architecture Solutions
+                </motion.h2>
               </motion.div>
               <motion.div
                 // @ts-ignore
                 variants={itemVariants}
                 className="relative z-10 flex flex-col gap-6 items-center text-center max-w-2xl"
               >
-                <h1 className="text-2xl sm:text-4xl lg:text-5xl text-zinc-950 font-bold leading-tight">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl text-zinc-950 font-semibold leading-tight">
                   Shape Your Digital Future with Us
                 </h1>
-                <p className="text-base sm:text-lg text-zinc-900/80 max-w-xl hidden sm:block">
+                <p className="text-base sm:text-lg text-zinc-900/80 max-w-xl">
                   Expert software architecture, modern web applications, and cutting-edge UI design
                 </p>
               </motion.div>
