@@ -1,18 +1,18 @@
 import UAIDualSolutions from "./UAIDualSolutions";
-import UAIFeaturesCTA from "./UAIFeaturesCTA";
-import UAIMobileReveal from "./UAIMobileReveal";
 import UAIHeroAssembly from "./UAIHeroAssembly";
+import UAIMobileReveal from "./UAIMobileReveal";
+import UAIFeaturesCTA from "./UAIFeaturesCTA";
 
 export default function UndergroundAIShowcase() {
     return (
       <section 
-        id="ai" 
+        id="underground-ai" 
         data-nav-section
-        className="relative overflow-hidden"
+        className="relative"
       >
         <UAIHeroAssembly />
         <UAIMobileReveal />
-        <UAIDualSolutions />
+        {/* <UAIDualSolutions /> */}
         <UAIFeaturesCTA />
       </section>
     );
