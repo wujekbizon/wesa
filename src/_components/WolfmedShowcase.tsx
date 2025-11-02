@@ -8,7 +8,6 @@ import {
 } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { keyFeatures } from '../data/clients';
-import BrowserMockup from './ui/BrowserMockup';
 import WofmedChallengeSolution from './WofmedChallengeSolution';
 import WolfmedHeroSection from './WolfmedHeroSection';
 
@@ -70,7 +69,7 @@ export default function WolfmedShowcase() {
                                     className="relative group cursor-pointer"
                                 >
                                     <motion.div
-                                        className="absolute -inset-4 bg-gradient-to-r from-amber-500/0 to-orange-500/0 rounded-2xl blur-2xl transition-all"
+                                        className="absolute -inset-4 bg-linear-to-r from-amber-500/0 to-orange-500/0 rounded-2xl blur-2xl transition-all"
                                         animate={{
                                             opacity: isHovered ? 0.3 : 0,
                                             scale: isHovered ? 1.1 : 1,
@@ -84,7 +83,7 @@ export default function WolfmedShowcase() {
                                                     scale: isHovered ? 1.1 : 1,
                                                 }}
                                                 transition={{ duration: 0.6 }}
-                                                className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl"
+                                                className="inline-flex items-center justify-center w-16 h-16 bg-linear-to-br from-amber-500 to-orange-500 rounded-2xl"
                                             >
                                                 <Icon className="w-8 h-8 text-white" />
                                             </motion.div>
@@ -107,10 +106,7 @@ export default function WolfmedShowcase() {
                     </div>
                 </div>
             </div>
-
-            {/* FINAL CTA */}
             <div className="relative py-24 sm:py-32 bg-black text-center overflow-hidden">
-                {/* Dramatic centered glow */}
                 <div className="absolute inset-0 opacity-25">
                     <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
                         <defs>
@@ -151,8 +147,6 @@ export default function WolfmedShowcase() {
                         </circle>
                     </svg>
                 </div>
-
-                {/* Grid overlay */}
                 <div className="absolute inset-0 opacity-[0.02]">
                     <div
                         className="h-full w-full"
@@ -165,15 +159,12 @@ export default function WolfmedShowcase() {
                         }}
                     />
                 </div>
-
-                {/* Noise texture */}
                 <div
                     className="absolute inset-0 opacity-[0.015]"
                     style={{
                         backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
                     }}
                 />
-
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -183,7 +174,7 @@ export default function WolfmedShowcase() {
                         <h2 className="section-title mb-6 text-4xl sm:text-5xl">
                             <span className="text-white">Ready to Transform</span>
                             <br />
-                            <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-amber-400 bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-amber-400 via-orange-500 to-amber-400 bg-clip-text text-transparent">
                                 Your Vision?
                             </span>
                         </h2>
@@ -198,7 +189,7 @@ export default function WolfmedShowcase() {
                                 rel="noopener noreferrer"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-lg font-bold rounded-full shadow-lg hover:shadow-2xl transition-shadow"
+                                className="inline-flex items-center gap-3 px-8 py-4 bg-linear-to-r from-amber-500 to-orange-500 text-white text-lg font-bold rounded-full shadow-lg hover:shadow-2xl transition-shadow"
                             >
                                 <Globe className="w-6 h-6" />
                                 Explore Live Platform
@@ -216,8 +207,6 @@ export default function WolfmedShowcase() {
                                 Start Your Project
                             </motion.a>
                         </div>
-
-                        {/* Tech stack mention - subtle */}
                         <motion.div
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}

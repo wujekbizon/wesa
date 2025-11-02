@@ -60,11 +60,11 @@ export const links: NavLink[] = [
     url: "/customers",
     submenu: [
 
-      { label: "Educational Software", url: "/customers", hash: "#medical" },
-      { label: "AI Tools", url: "/customers", hash: "#ai" },
+      { label: "Educational Software", url: "/customers/educational", hash: "#medical" },
+      { label: "AI Tools", url: "/customers/ai", hash: "#ai" },
       {
         label: "Digital Interfaces",
-        url: "/customers",
+        url: "/customers/digital",
         hash: "#digital-interfaces",
       },
     ],

@@ -224,10 +224,6 @@ export default function CoreSolutions() {
               <span className="relative z-10 text-lg">Explore All Solutions</span>
               <ArrowRight className="relative z-10 w-5 h-5 transition-transform group-hover:translate-x-1" />
           </motion.a>
-
-          <p className="mt-6 text-sm text-gray-500 font-mono">
-            Or scroll down to explore our architecture patterns
-          </p>
         </motion.div>
       </motion.div>
     </section>

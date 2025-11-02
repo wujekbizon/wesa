@@ -16,7 +16,7 @@ export default function WolfmedHeroSection() {
   const autoAnimationRef = useRef<NodeJS.Timeout | null>(null);
   const inactivityTimerRef = useRef<NodeJS.Timeout | null>(null);
   const [isUserActive, setIsUserActive] = useState(false);
-  
+
   const splitPosition = useMotionValue(90);
 
   const { scrollYProgress: heroScroll } = useScroll({
@@ -45,7 +45,7 @@ export default function WolfmedHeroSection() {
 
   useEffect(() => {
     const events = ['mousemove', 'mousedown', 'click', 'scroll', 'keydown', 'touchstart', 'touchmove', 'wheel'];
-    
+
     events.forEach(event => {
       window.addEventListener(event, handleUserActivity, { passive: true });
     });
@@ -76,20 +76,20 @@ export default function WolfmedHeroSection() {
     const startDelay = setTimeout(() => {
       const runAutoAnimation = async () => {
         if (isUserActive || hasManuallyDragged) return;
-        
+
         await animate(splitPosition, 10, {
           duration: 2,
           ease: [0.4, 0, 0.2, 1],
         });
         await new Promise(resolve => setTimeout(resolve, 13000));
-        
+
         if (isUserActive || hasManuallyDragged) return;
-        
+
         await animate(splitPosition, 90, {
           duration: 2,
           ease: [0.4, 0, 0.2, 1],
         });
-        
+
         await new Promise(resolve => setTimeout(resolve, 13000));
       };
 
@@ -99,7 +99,7 @@ export default function WolfmedHeroSection() {
           runAutoAnimation();
         }
       }, 30000);
-      
+
       autoAnimationRef.current = interval;
     }, 10000);
 
@@ -114,7 +114,7 @@ export default function WolfmedHeroSection() {
   const handlePointerDown = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
     setIsDragging(true);
     setHasManuallyDragged(true);
-    handleUserActivity(); // Mark as active
+    handleUserActivity();
     e.preventDefault();
     e.stopPropagation();
   };
@@ -128,7 +128,7 @@ export default function WolfmedHeroSection() {
 
     const percentage = ((clientX - rect.left) / rect.width) * 100;
     const clampedPercentage = Math.max(10, Math.min(90, percentage));
-    
+
     splitPosition.set(clampedPercentage);
   };
 
@@ -194,7 +194,7 @@ export default function WolfmedHeroSection() {
                       Featured Project 2025
                     </span>
                   </motion.div>
-                  
+
                   <div className="flex-1 flex flex-col justify-center space-y-4 sm:space-y-6">
                     <motion.h1
                       initial={{ opacity: 0, y: 20 }}
@@ -208,7 +208,7 @@ export default function WolfmedHeroSection() {
                         Medical Education
                       </span>
                     </motion.h1>
-                    
+
                     <motion.p
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -219,7 +219,7 @@ export default function WolfmedHeroSection() {
                       learning tools and adaptive testing systems.
                     </motion.p>
                   </div>
-                  
+
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -249,13 +249,11 @@ export default function WolfmedHeroSection() {
               style={{
                 left: useTransform(splitPosition, (v) => `${v}%`),
               }}
-              className={`absolute top-0 bottom-0 -ml-[2px] w-[4px] bg-white/20 cursor-col-resize z-50 group touch-none select-none ${
-                isDragging ? 'bg-white/40' : ''
-              } transition-colors hover:bg-white/30`}
+              className={`absolute top-0 bottom-0 -ml-[2px] w-[4px] bg-white/20 cursor-col-resize z-50 group touch-none select-none ${isDragging ? 'bg-white/40' : ''
+                } transition-colors hover:bg-white/30`}
             >
-              <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-16 bg-white/10 border border-white/30 rounded-full backdrop-blur-sm flex items-center justify-center transition-opacity ${
-                isDragging ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-              }`}>
+              <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-16 bg-white/10 border border-white/30 rounded-full backdrop-blur-sm flex items-center justify-center transition-opacity ${isDragging ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
+                }`}>
                 <svg className="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
                 </svg>
