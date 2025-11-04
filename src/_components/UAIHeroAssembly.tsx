@@ -11,7 +11,6 @@ export default function UAIHeroAssembly() {
         offset: ["start start", "end end"]
     });
 
-    // True parallax: background layers move SLOWER than foreground
     const architectureY = useTransform(scrollYProgress, [0, 1], [0, 50]);
     const neuralY = useTransform(scrollYProgress, [0, 1], [0, 100]);
     const voiceY = useTransform(scrollYProgress, [0, 1], [0, 200]);
@@ -20,18 +19,15 @@ export default function UAIHeroAssembly() {
     const processingY = useTransform(scrollYProgress, [0, 1], [0, 350]);
     const shieldY = useTransform(scrollYProgress, [0, 1], [0, 400]);
 
-    // Persistent architecture background fades in and stays
     const architectureOpacity = useTransform(scrollYProgress, [0, 0.08, 0.95, 1], [0, 0.4, 0.4, 0]);
-    
-    // Stage activation - each stage lights up during its corresponding layer
-    const stage1Opacity = useTransform(scrollYProgress, [0.05, 0.12, 0.22, 0.24], [0, 1, 1, 0.3]); // Neural
-    const stage2Opacity = useTransform(scrollYProgress, [0.24, 0.31, 0.41, 0.43], [0.3, 1, 1, 0.3]); // Voice
-    const stage3Opacity = useTransform(scrollYProgress, [0.43, 0.50, 0.60, 0.62], [0.3, 1, 1, 0.3]); // Firing
-    const stage4Opacity = useTransform(scrollYProgress, [0.62, 0.69, 0.79, 0.81], [0.3, 1, 1, 0.3]); // Brain
-    const stage5Opacity = useTransform(scrollYProgress, [0.81, 0.88, 0.98, 0.99], [0.3, 1, 1, 0.3]); // Processing
-    const stage6Opacity = useTransform(scrollYProgress, [0.88, 0.92, 0.99, 1], [0.3, 1, 1, 0]); // Shield
 
-    // Sequential fade-in with each layer fading out before the next appears
+    const stage1Opacity = useTransform(scrollYProgress, [0.05, 0.12, 0.22, 0.24], [0, 1, 1, 0.3]);
+    const stage2Opacity = useTransform(scrollYProgress, [0.24, 0.31, 0.41, 0.43], [0.3, 1, 1, 0.3]);
+    const stage3Opacity = useTransform(scrollYProgress, [0.43, 0.50, 0.60, 0.62], [0.3, 1, 1, 0.3]);
+    const stage4Opacity = useTransform(scrollYProgress, [0.62, 0.69, 0.79, 0.81], [0.3, 1, 1, 0.3]);
+    const stage5Opacity = useTransform(scrollYProgress, [0.81, 0.88, 0.98, 0.99], [0.3, 1, 1, 0.3]);
+    const stage6Opacity = useTransform(scrollYProgress, [0.88, 0.92, 0.99, 1], [0.3, 1, 1, 0]);
+
     const neuralOpacity = useTransform(scrollYProgress, [0.05, 0.12, 0.16, 0.22], [0, 1, 1, 0]);
     const voiceOpacity = useTransform(scrollYProgress, [0.24, 0.31, 0.35, 0.41], [0, 1, 1, 0]);
     const firingOpacity = useTransform(scrollYProgress, [0.43, 0.50, 0.54, 0.60], [0, 1, 1, 0]);
@@ -39,7 +35,6 @@ export default function UAIHeroAssembly() {
     const processingOpacity = useTransform(scrollYProgress, [0.81, 0.88, 0.92, 0.98], [0, 1, 1, 0]);
     const shieldOpacity = useTransform(scrollYProgress, [0.88, 0.92, 0.96, 1], [0, 1, 1, 0]);
 
-    // Hero text fades out slower
     const heroOpacity = useTransform(scrollYProgress, [0, 0.08], [1, 0]);
     const heroScale = useTransform(scrollYProgress, [0, 0.08], [1, 0.95]);
 
@@ -49,7 +44,6 @@ export default function UAIHeroAssembly() {
             className="relative h-[600vh] bg-black"
         >
             <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
-                {/* Hero Text - scroll-driven */}
                 <motion.div
                     style={{ opacity: heroOpacity, scale: heroScale }}
                     className="absolute z-50 text-center px-4 max-w-5xl"
@@ -84,7 +78,6 @@ export default function UAIHeroAssembly() {
                     </div>
                 </motion.div>
 
-                {/* Persistent Architecture Background - Positioned at top */}
                 <motion.div
                     style={{ y: architectureY, opacity: architectureOpacity }}
                     className="absolute inset-0 flex items-start justify-center pointer-events-none z-5 pt-12 sm:pt-16 md:pt-20"
@@ -102,7 +95,6 @@ export default function UAIHeroAssembly() {
                             </radialGradient>
                         </defs>
 
-                        {/* Main flow pipeline - left to right */}
                         <path
                             d="M 100 150 L 250 150 L 280 120 L 380 120 L 410 150 L 600 150 L 630 180 L 730 180 L 760 150 L 900 150 L 950 150 L 1100 150"
                             stroke="url(#flowGrad)"
@@ -111,7 +103,6 @@ export default function UAIHeroAssembly() {
                             strokeDasharray="8 4"
                         />
 
-                        {/* Stage 1: INPUT - Neural Foundation */}
                         <motion.g style={{ opacity: stage1Opacity }}>
                             <circle cx="150" cy="150" r="35" fill="url(#stageGlow)" opacity="0.3" />
                             <circle cx="150" cy="150" r="30" stroke="#8B5CF6" strokeWidth="3" fill="none" />
@@ -119,7 +110,6 @@ export default function UAIHeroAssembly() {
                         </motion.g>
                         <circle cx="150" cy="150" r="30" stroke="#8B5CF6" strokeWidth="2" fill="none" opacity="0.2" />
 
-                        {/* Stage 2: PROCESS - Voice Recognition */}
                         <motion.g style={{ opacity: stage2Opacity }}>
                             <circle cx="330" cy="120" r="35" fill="url(#stageGlow)" opacity="0.3" />
                             <circle cx="330" cy="120" r="30" stroke="#06B6D4" strokeWidth="3" fill="none" />
@@ -127,7 +117,6 @@ export default function UAIHeroAssembly() {
                         </motion.g>
                         <circle cx="330" cy="120" r="30" stroke="#06B6D4" strokeWidth="2" fill="none" opacity="0.2" />
 
-                        {/* Stage 3: NEURAL - Firing Neurons */}
                         <motion.g style={{ opacity: stage3Opacity }}>
                             <circle cx="500" cy="150" r="35" fill="url(#stageGlow)" opacity="0.3" />
                             <circle cx="500" cy="150" r="30" stroke="#F59E0B" strokeWidth="3" fill="none" />
@@ -135,7 +124,6 @@ export default function UAIHeroAssembly() {
                         </motion.g>
                         <circle cx="500" cy="150" r="30" stroke="#3B82F6" strokeWidth="2" fill="none" opacity="0.2" />
 
-                        {/* Stage 4: ANALYZE - Brain Processing */}
                         <motion.g style={{ opacity: stage4Opacity }}>
                             <circle cx="680" cy="180" r="35" fill="url(#stageGlow)" opacity="0.3" />
                             <circle cx="680" cy="180" r="30" stroke="#3B82F6" strokeWidth="3" fill="none" />
@@ -143,7 +131,6 @@ export default function UAIHeroAssembly() {
                         </motion.g>
                         <circle cx="680" cy="180" r="30" stroke="#8B5CF6" strokeWidth="2" fill="none" opacity="0.2" />
 
-                        {/* Stage 5: DATA - Processing Streams */}
                         <motion.g style={{ opacity: stage5Opacity }}>
                             <circle cx="830" cy="150" r="35" fill="url(#stageGlow)" opacity="0.3" />
                             <circle cx="830" cy="150" r="30" stroke="#8B5CF6" strokeWidth="3" fill="none" />

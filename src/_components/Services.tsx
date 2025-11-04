@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion'
 import { Code2, Cpu, Layers, Users, TerminalSquare, Github } from 'lucide-react'
 import FrontendCodePreview from './FrontendCodePreview'
+import DevOpsCodePreview from './DevOpsCodePreview'
+import BackendCodePreview from './BackendCodePreview'
 import FrontendServiceCard from './ui/FrontendServiceCard'
+import DevOpsServiceCard from './ui/DevOpsServiceCard'
+
 
 export default function Services() {
     return (
@@ -59,23 +63,28 @@ export default function Services() {
                                             </div>
                                         </motion.div>
 
-                                        {/* Short Card 2 - DevOps */}
+                                        {/* Tall Card 2 - DevOps */}
                                         <motion.div
                                             initial={{ opacity: 0, y: 30 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
-                                            transition={{ duration: 0.6, delay: 0.1 }}
-                                            className="group relative rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-hidden aspect-4/3 min-h-[220px] max-h-[300px]"
+                                            transition={{ duration: 0.6 }}
+                                            className="group relative isolate flex flex-col rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-visible aspect-3/4 min-h-[300px] max-h-[500px]"
                                         >
                                             <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
-                                            <div className="relative z-10 flex flex-col justify-center items-center h-full p-6 text-center">
-                                                <div className="w-12 h-12 bg-amber-500/10 border border-amber-500/30 rounded-lg flex items-center justify-center text-amber-500 mb-4">
-                                                    <Layers className="w-6 h-6" />
+                                            <DevOpsCodePreview />
+                                            <div className="relative z-0 flex-none px-6 pt-8 pb-6">
+                                                <div className="flex items-start gap-4 mb-4">
+                                                    <div className="w-9 h-9 bg-amber-500/10 border border-amber-500/30 rounded-lg flex items-center justify-center text-amber-500 shrink-0">
+                                                        <Layers className="w-5 h-5" />
+                                                    </div>
+                                                    <div className="flex-1">
+                                                        <h3 className="text-xl font-semibold text-white mb-2">DevOps & Infrastructure</h3>
+                                                        <p className="text-sm text-gray-400 leading-relaxed">
+                                                            Docker containerization strategy, Kubernetes orchestration setup, CI/CD pipeline configuration, and cloud deployment optimization.
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <h3 className="text-xl font-semibold text-white mb-2">DevOps & Infrastructure</h3>
-                                                <p className="text-sm text-gray-400 leading-relaxed">
-                                                    Docker containerization, Kubernetes orchestration, and CI/CD pipeline configuration.
-                                                </p>
                                             </div>
                                         </motion.div>
                                     </>
@@ -86,7 +95,7 @@ export default function Services() {
                                             initial={{ opacity: 0, y: 30 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
-                                            transition={{ duration: 0.6, delay: 0.2 }}
+                                            transition={{ duration: 0.6 }}
                                             className="group relative rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-hidden aspect-4/3 min-h-[220px] max-h-[300px]"
                                         >
                                             <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
@@ -106,11 +115,11 @@ export default function Services() {
                                             initial={{ opacity: 0, y: 30 }}
                                             whileInView={{ opacity: 1, y: 0 }}
                                             viewport={{ once: true }}
-                                            transition={{ duration: 0.6, delay: 0.3 }}
+                                            transition={{ duration: 0.6 }}
                                             className="group relative isolate flex flex-col rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-visible aspect-3/4 min-h-[300px] max-h-[500px]"
                                         >
                                             <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
-                                            <FrontendCodePreview />
+                                            <BackendCodePreview />
                                             <div className="relative z-10 flex-none px-6 py-6 order-last">
                                                 <div className="flex items-center gap-3 mb-3">
                                                     <div className="w-10 h-10 bg-amber-500/10 border border-amber-500/30 rounded-lg flex items-center justify-center text-amber-500">
@@ -152,6 +161,7 @@ export default function Services() {
                     </div>
                 </motion.div>
 
+                {/* Row 1-2, Col 2 - Tall Card: Frontend */}
                 <FrontendServiceCard />
 
                 {/* Row 1, Col 3 - Short Card: DevOps */}
@@ -159,7 +169,7 @@ export default function Services() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
+                    transition={{ duration: 0.6 }}
                     className="group h-full w-full relative rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-hidden xl:col-start-3 xl:row-start-1 aspect-4/3 min-h-[220px] max-h-[300px]"
                 >
                     <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
@@ -179,11 +189,11 @@ export default function Services() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.3 }}
+                    transition={{ duration: 0.6 }}
                     className="group h-full w-full relative isolate flex flex-col rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-visible xl:col-start-1 xl:row-start-2 xl:row-span-2 aspect-3/4 min-h-[300px]"
                 >
                     <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
-                    <FrontendCodePreview />
+                    <BackendCodePreview />
                     <div className="relative z-10 flex-none px-6 py-6 order-last mt-auto">
                         <div className="flex items-center gap-3 mb-3">
                             <div className="w-10 h-10 bg-amber-500/10 border border-amber-500/30 rounded-lg flex items-center justify-center text-amber-500">
@@ -197,12 +207,15 @@ export default function Services() {
                     </div>
                 </motion.div>
 
+                {/* Row 2-3, Col 3 - Tall Card: Open Source (spans 2 rows) */}
+                <DevOpsServiceCard />
+
                 {/* Row 3, Col 2 - Short Card: Team Collaboration */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.4 }}
+                    transition={{ duration: 0.6 }}
                     className="group h-full w-full relative rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-hidden xl:col-start-2 xl:row-start-3 aspect-4/3 min-h-[220px] max-h-[300px]"
                 >
                     <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
@@ -217,35 +230,12 @@ export default function Services() {
                     </div>
                 </motion.div>
 
-                {/* Row 2-3, Col 3 - Tall Card: Open Source (spans 2 rows) */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.5 }}
-                    className="group h-full w-full relative isolate flex flex-col rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-visible xl:col-start-3 xl:row-start-2 xl:row-span-2 aspect-3/4 min-h-[300px]"
-                >
-                    <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
-                    <FrontendCodePreview />
-                    <div className="relative z-10 flex-none px-6 py-6 order-last mt-auto">
-                        <div className="flex items-center gap-3 mb-3">
-                            <div className="w-10 h-10 bg-amber-500/10 border border-amber-500/30 rounded-lg flex items-center justify-center text-amber-500">
-                                <Github className="w-5 h-5" />
-                            </div>
-                            <h3 className="text-xl font-bold text-white">Open Source</h3>
-                        </div>
-                        <p className="text-sm text-gray-400 leading-relaxed">
-                            Contributing to and maintaining open source projects that benefit the developer community.
-                        </p>
-                    </div>
-                </motion.div>
-
                 {/* Row 4, Col 1 - Short Card: API Development */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.6 }}
+                    transition={{ duration: 0.6 }}
                     className="group h-full w-full relative rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-hidden xl:col-start-1 xl:row-start-4 aspect-4/3 min-h-[220px] max-h-[300px]"
                 >
                     <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
@@ -265,7 +255,7 @@ export default function Services() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.7 }}
+                    transition={{ duration: 0.6 }}
                     className="group h-full w-full relative rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-hidden xl:col-start-2 xl:row-start-4 aspect-4/3 min-h-[220px] max-h-[300px]"
                 >
                     <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
@@ -285,7 +275,7 @@ export default function Services() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.8 }}
+                    transition={{ duration: 0.6 }}
                     className="group h-full w-full relative rounded-2xl bg-gray-900/80 border border-white/10 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-lg overflow-hidden xl:col-start-3 xl:row-start-4 aspect-4/3 min-h-[220px] max-h-[300px]"
                 >
                     <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-white/5 via-gray-900/20 to-transparent opacity-70" />
